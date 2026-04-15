@@ -1,0 +1,124 @@
+/* Generated from Figma Design: VY7pr9pz88TulvvHuC3UNJ, Node: 1-182 */
+/* Design Dimensions: 1680.0x4734.0px */
+
+/* ===== CSS Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Design Tokens ===== */
+:root {
+    --color-1: rgb(0, 0, 0);
+    --color-2: rgb(39, 70, 58);
+    --color-3: rgb(41, 41, 41);
+    --color-4: rgb(46, 69, 59);
+    --color-5: rgb(52, 119, 63);
+    --color-6: rgb(103, 137, 60);
+    --color-7: rgb(127, 167, 110);
+    --color-8: rgb(133, 179, 54);
+    --color-9: rgb(181, 215, 168);
+    --color-10: rgb(210, 227, 143);
+    --color-11: rgb(217, 217, 217);
+    --color-12: rgb(229, 229, 229);
+    --color-13: rgb(241, 229, 212);
+    --color-14: rgb(247, 242, 236);
+    --color-15: rgb(248, 242, 235);
+    --color-16: rgb(255, 255, 255);
+}
+
+/* Found 16 unique colors */
+
+/* Color Reference:
+   --color-1: #000000 / rgb(0, 0, 0)
+   --color-2: #27463a / rgb(39, 70, 58)
+   --color-3: #292929 / rgb(41, 41, 41)
+   --color-4: #2e453b / rgb(46, 69, 59)
+   --color-5: #34773f / rgb(52, 119, 63)
+   --color-6: #67893c / rgb(103, 137, 60)
+   --color-7: #7fa76e / rgb(127, 167, 110)
+   --color-8: #85b336 / rgb(133, 179, 54)
+   --color-9: #b5d7a8 / rgb(181, 215, 168)
+   --color-10: #d2e38f / rgb(210, 227, 143)
+   --color-11: #d9d9d9 / rgb(217, 217, 217)
+   --color-12: #e5e5e5 / rgb(229, 229, 229)
+   --color-13: #f1e5d4 / rgb(241, 229, 212)
+   --color-14: #f7f2ec / rgb(247, 242, 236)
+   --color-15: #f8f2eb / rgb(248, 242, 235)
+   --color-16: #ffffff / rgb(255, 255, 255)
+*/
+
+
+/* ===== Base Styles ===== */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: var(--color-1, #333);
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+.figma-container {
+    max-width: 1680.0px;
+    margin: 0 auto;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: inherit;
+}
+
+/* ===== Layout Helpers ===== */
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.navigation {
+    position: relative;
+}
+
+.text {
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Responsive Breakpoints ===== */
+/* Desktop: 1680.0px+ (design base) */
+/* Tablet: 1024px and below */
+/* Mobile: 768px - 1023px */
+/* Small: < 768px */
+
+@media (max-width: 1024px) {
+    .figma-container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .figma-container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .figma-container {
+        padding: 0 10px;
+    }
+}

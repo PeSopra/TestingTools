@@ -1,0 +1,347 @@
+{
+  "generated_at": "2026-03-11 13:58:06.367542",
+  "fileKey": "VY7pr9pz88TulvvHuC3UNJ",
+  "outputDir": "/Users/ESAranaEd/output/images",
+  "summary": {
+    "total_images_found": 39,
+    "images_exported": 41,
+    "export_failures": 0,
+    "placeholders_created": 0
+  },
+  "by_category": {
+    "background": 1,
+    "general": 33,
+    "icon": 5,
+    "logo": 2
+  },
+  "exported_files": [
+    {
+      "success": true,
+      "filename": "background-f6fb8d04-natures_bounty_hero_image_1.png",
+      "size_kb": 523.3349609375,
+      "category": "background",
+      "node_id": "1:184",
+      "name": "natures bounty hero image 1"
+    },
+    {
+      "success": true,
+      "filename": "general-6d163d21-NB_-_Sleep_Range_-_Asset_3_1.png",
+      "size_kb": 5934.8740234375,
+      "category": "general",
+      "node_id": "1:185",
+      "name": "NB_-_Sleep_Range_-_Asset_3 1"
+    },
+    {
+      "success": true,
+      "filename": "general-13d1fd52-NB_-_Daily_Wellbeing_US_-_Asset_4_2.png",
+      "size_kb": 6666.9755859375,
+      "category": "general",
+      "node_id": "1:186",
+      "name": "NB_-_Daily_Wellbeing_US_-_Asset_4 2"
+    },
+    {
+      "success": true,
+      "filename": "general-d79519db-gettyimages-1187789014-170667a.png",
+      "size_kb": 54.384765625,
+      "category": "general",
+      "node_id": "1:187",
+      "name": "gettyimages-1187789014-170667a"
+    },
+    {
+      "success": true,
+      "filename": "general-c5b27bdc-AdobeStock_437359026_1.png",
+      "size_kb": 7374.78125,
+      "category": "general",
+      "node_id": "1:188",
+      "name": "AdobeStock_437359026 1"
+    },
+    {
+      "success": true,
+      "filename": "general-18517542-gettyimages-1134454088-170667a.png",
+      "size_kb": 57.7978515625,
+      "category": "general",
+      "node_id": "1:189",
+      "name": "gettyimages-1134454088-170667a"
+    },
+    {
+      "success": true,
+      "filename": "general-a9c8e55c-gettyimages-1744601961-170667a.png",
+      "size_kb": 88.2255859375,
+      "category": "general",
+      "node_id": "1:190",
+      "name": "gettyimages-1744601961-170667a"
+    },
+    {
+      "success": true,
+      "filename": "general-5adaecd3-Page15.png",
+      "size_kb": 4142.337890625,
+      "category": "general",
+      "node_id": "1:200",
+      "name": "Page15"
+    },
+    {
+      "success": true,
+      "filename": "general-83b5fe6a-Page36.png",
+      "size_kb": 11591.861328125,
+      "category": "general",
+      "node_id": "1:201",
+      "name": "Page36"
+    },
+    {
+      "success": true,
+      "filename": "general-66ffbbd0-Page23.png",
+      "size_kb": 12037.0419921875,
+      "category": "general",
+      "node_id": "1:202",
+      "name": "Page23"
+    },
+    {
+      "success": true,
+      "filename": "general-1d6498ea-AdobeStock_329153195_1.png",
+      "size_kb": 8107.337890625,
+      "category": "general",
+      "node_id": "1:205",
+      "name": "AdobeStock_329153195 1"
+    },
+    {
+      "success": true,
+      "filename": "general-9bc3592f-Page26.png",
+      "size_kb": 5578.296875,
+      "category": "general",
+      "node_id": "1:206",
+      "name": "Page26"
+    },
+    {
+      "success": true,
+      "filename": "general-255c05e6-Screen_Shot_2022-09-08_at_2.59.png",
+      "size_kb": 265.931640625,
+      "category": "general",
+      "node_id": "1:216",
+      "name": "Screen Shot 2022-09-08 at 2.59"
+    },
+    {
+      "success": true,
+      "filename": "general-2b0b9601-b12.Mel.Fish.Prob.HSN_2.png",
+      "size_kb": 5423.3388671875,
+      "category": "general",
+      "node_id": "1:217",
+      "name": "b12.Mel.Fish.Prob.HSN 2"
+    },
+    {
+      "success": true,
+      "filename": "general-5dd1ae19-50_years_green@4x_1.png",
+      "size_kb": 23.0869140625,
+      "category": "general",
+      "node_id": "1:218",
+      "name": "50 years green@4x 1"
+    },
+    {
+      "success": true,
+      "filename": "general-d19b700b-shutterstock_1924133141_1.png",
+      "size_kb": 11123.4189453125,
+      "category": "general",
+      "node_id": "1:228",
+      "name": "shutterstock_1924133141 1"
+    },
+    {
+      "success": true,
+      "filename": "general-8f04f139-GettyImages-470643888_HD_720p_1.png",
+      "size_kb": 154.1298828125,
+      "category": "general",
+      "node_id": "1:235",
+      "name": "GettyImages-470643888_HD 720p 1"
+    },
+    {
+      "success": true,
+      "filename": "general-9bb38724-GettyImages-1262918012_1.png",
+      "size_kb": 12046.814453125,
+      "category": "general",
+      "node_id": "1:242",
+      "name": "GettyImages-1262918012 1"
+    },
+    {
+      "success": true,
+      "filename": "general-324ba7d5-np_arrow-left_888650_027939_1.png",
+      "size_kb": 3.4453125,
+      "category": "general",
+      "node_id": "1:246",
+      "name": "np_arrow-left_888650_027939 1"
+    },
+    {
+      "success": true,
+      "filename": "general-b5985aca-Screen_Shot_2022-09-02_at_11.26.png",
+      "size_kb": 684.64453125,
+      "category": "general",
+      "node_id": "I1:262;1:1069",
+      "name": "Screen Shot 2022-09-02 at 11.26"
+    },
+    {
+      "success": true,
+      "filename": "general-4be29d8c-Screen_Shot_2022-09-02_at_11.25.png",
+      "size_kb": 635.4423828125,
+      "category": "general",
+      "node_id": "I1:262;1:1070",
+      "name": "Screen Shot 2022-09-02 at 11.25"
+    },
+    {
+      "success": true,
+      "filename": "general-abab8c43-Screen_Shot_2022-09-02_at_11.25.png",
+      "size_kb": 566.1669921875,
+      "category": "general",
+      "node_id": "I1:262;1:1071",
+      "name": "Screen Shot 2022-09-02 at 11.25"
+    },
+    {
+      "success": true,
+      "filename": "general-e738bd26-Screen_Shot_2022-09-02_at_11.25.png",
+      "size_kb": 708.505859375,
+      "category": "general",
+      "node_id": "I1:262;1:1072",
+      "name": "Screen Shot 2022-09-02 at 11.25"
+    },
+    {
+      "success": true,
+      "filename": "general-0c85c306-Screen_Shot_2022-09-02_at_11.25.png",
+      "size_kb": 461.3662109375,
+      "category": "general",
+      "node_id": "I1:262;1:1073",
+      "name": "Screen Shot 2022-09-02 at 11.25"
+    },
+    {
+      "success": true,
+      "filename": "general-da616353-50_Years_white@4x_1.png",
+      "size_kb": 20.6455078125,
+      "category": "general",
+      "node_id": "I1:262;1:1078",
+      "name": "50 Years white@4x 1"
+    },
+    {
+      "success": true,
+      "filename": "icon-635c83db-facebook_icon.png",
+      "size_kb": 2.916015625,
+      "category": "icon",
+      "node_id": "I1:262;27:5597",
+      "name": "facebook icon"
+    },
+    {
+      "success": true,
+      "filename": "icon-a9a4580c-instagram_icon.png",
+      "size_kb": 15.7158203125,
+      "category": "icon",
+      "node_id": "I1:262;27:5598",
+      "name": "instagram icon"
+    },
+    {
+      "success": true,
+      "filename": "icon-3d6b7fed-pinterest_icon.png",
+      "size_kb": 18.455078125,
+      "category": "icon",
+      "node_id": "I1:262;27:5599",
+      "name": "pinterest icon"
+    },
+    {
+      "success": true,
+      "filename": "icon-e8c60a7c-twitter_icon.png",
+      "size_kb": 11.3037109375,
+      "category": "icon",
+      "node_id": "I1:262;27:5600",
+      "name": "twitter icon"
+    },
+    {
+      "success": true,
+      "filename": "icon-9902bd34-youtube_icon.png",
+      "size_kb": 6.6396484375,
+      "category": "icon",
+      "node_id": "I1:262;27:5601",
+      "name": "youtube icon"
+    },
+    {
+      "success": true,
+      "filename": "general-9a3fb6fe-Co_Q-10.png",
+      "size_kb": 2167.25,
+      "category": "general",
+      "node_id": "1:366",
+      "name": "Co Q-10"
+    },
+    {
+      "success": true,
+      "filename": "general-744f1063-Screen_Shot_2022-08-17_at_11.32_1.png",
+      "size_kb": 3842.712890625,
+      "category": "general",
+      "node_id": "1:373",
+      "name": "Screen Shot 2022-08-17 at 11.32 1"
+    },
+    {
+      "success": true,
+      "filename": "general-a61bbe87-Screen_Shot_2022-09-01_at_1.33_1.png",
+      "size_kb": 2975.845703125,
+      "category": "general",
+      "node_id": "1:374",
+      "name": "Screen Shot 2022-09-01 at 1.33 1"
+    },
+    {
+      "success": true,
+      "filename": "general-92a584bb-Screen_Shot_2022-09-01_at_2.06_1.png",
+      "size_kb": 1907.8974609375,
+      "category": "general",
+      "node_id": "1:375",
+      "name": "Screen Shot 2022-09-01 at 2.06 1"
+    },
+    {
+      "success": true,
+      "filename": "general-324326c6-Screen_Shot_2022-09-01_at_2.19_1.png",
+      "size_kb": 2113.2353515625,
+      "category": "general",
+      "node_id": "1:376",
+      "name": "Screen Shot 2022-09-01 at 2.19 1"
+    },
+    {
+      "success": true,
+      "filename": "general-84816505-image_9.png",
+      "size_kb": 1889.2490234375,
+      "category": "general",
+      "node_id": "1:378",
+      "name": "image 9"
+    },
+    {
+      "success": true,
+      "filename": "general-db100623-NB_HSN_Portrait_0495_1466_v1.png",
+      "size_kb": 2474.9091796875,
+      "category": "general",
+      "node_id": "1:379",
+      "name": "NB_HSN_Portrait_0495_1466_v1"
+    },
+    {
+      "success": true,
+      "filename": "general-eb4273bf-Page29_1.png",
+      "size_kb": 11799.513671875,
+      "category": "general",
+      "node_id": "1:380",
+      "name": "Page29 1"
+    },
+    {
+      "success": true,
+      "filename": "general-666b368e-NB_CoQ10_Beauty_200mg_80ct_lbl-Ang1_1.png",
+      "size_kb": 2350.5458984375,
+      "category": "general",
+      "node_id": "1:396",
+      "name": "NB_CoQ10_Beauty_200mg_80ct_lbl-Ang1 1"
+    },
+    {
+      "success": true,
+      "filename": "logo-I1-220-2-169-Logo.svg",
+      "name": "Logo",
+      "category": "logo",
+      "node_id": "I1-220-2-169"
+    },
+    {
+      "success": true,
+      "filename": "logo-I1-262-27-5602-Logo.svg",
+      "name": "Logo",
+      "category": "logo",
+      "node_id": "I1-262-27-5602"
+    }
+  ],
+  "failed_exports": [],
+  "placeholders": []
+}

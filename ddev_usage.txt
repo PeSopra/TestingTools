@@ -1,0 +1,30 @@
+# DDEV Commands Reference
+
+## Essential Commands
+
+**Start DDEV:**
+```bash
+ddev start
+```
+
+**Get Drupal admin login URL:**
+```bash
+ddev drush uli
+```
+Note: It's `ddev drush uli` (not `--uli`). The `uli` stands for "user-login" and generates a one-time login URL.
+
+**Combined command to start and get login URL:**
+```bash
+ddev start && ddev drush uli
+```
+
+## Other Useful DDEV Commands
+
+```bash
+ddev stop          # Stop the project
+ddev restart       # Restart the project
+ddev ssh           # SSH into the web container
+ddev exec <cmd>    # Execute command in web container
+ddev describe      # Show project info and URLs
+ddev logs          # Show container logs
+```
