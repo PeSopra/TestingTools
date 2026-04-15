@@ -1,0 +1,88 @@
+{
+    "tipo_vehiculo": [
+        "turismo", "SUV", "todoterreno",
+        "vehículo de carga", "camión rígido", "tráiler", "furgoneta",
+        "vehículo cisterna", "transporte especial",
+        "motocicleta", "ciclomotor", "triciclo", "quad",
+        "autobús", "microbús", "taxi", "VTC",
+        "bicicleta", "patinete eléctrico", "peatón",
+        "vehículo de emergencia", "ambulancia", "policía", "bomberos",
+        "convoy especial", "maquinaria agrícola", "grúa de asistencia"
+    ],
+
+    "tipo_via": [
+        "autopista", "autovía", "carretera convencional", "vía urbana",
+        "travesía", "calle residencial", "zona 30",
+        "túnel", "puente móvil", "paso a nivel", "vía con obras"
+    ],
+
+    "configuracion_via": [
+        "carril único", "doble sentido", "sentido único", "calzada dividida",
+        "varios carriles por sentido", "carril bus", "carril bici", "carril VAO",
+        "arcén practicable", "arcén no practicable",
+        "isleta", "refugio", "carril trenzado",
+        "cruce simple", "cruce con semáforo", "intersección en T", "intersección en Y",
+        "rotonda", "rotonda partida", "turbo rotonda"
+    ],
+
+    "senalizacion": [
+        "señal STOP", "ceda el paso", "semáforo verde", "semáforo ámbar",
+        "semáforo rojo", "semáforo bicicletas", "prohibido adelantar",
+        "límite de velocidad", "fin de limitación", "carril reservado",
+        "línea continua", "línea discontinua", "paso de peatones", "cebreado",
+        "flechas direccionales", "marcas carril bus", "marcas carril bici",
+        "obra en la vía", "balizamiento", "desvío provisional", "semáforo amarillo intermitente"
+    ],
+
+    "visibilidad_entorno": [
+        "buena visibilidad", "mala visibilidad", "noche", "lluvia",
+        "niebla", "deslumbramiento", "baja iluminación", "vía mojada",
+        "vía deslizante", "gravilla", "arena", "hielo"
+    ],
+
+    "maniobras": [
+        "incorporación a vía principal", "incorporación carril aceleración",
+        "incorporación desde stop", "incorporación desde ceda",
+        "cambio de carril derecha", "cambio de carril izquierda",
+        "cambio de sentido", "giro derecha", "giro izquierda",
+        "entrada en rotonda", "circulación rotonda carril interior",
+        "circulación rotonda carril exterior", "salida de rotonda",
+        "adelantamiento izquierda", "adelantamiento derecha",
+        "rebasamiento", "volver al carril tras adelantar",
+        "frenada brusca", "reducción velocidad", "detención voluntaria",
+        "detención por tráfico", "arranque desde parado",
+        "aparcando", "saliendo estacionamiento", "parada doble fila",
+        "marcha atrás", "maniobra evasiva", "invasión carril contrario"
+    ],
+
+    "prioridad": [
+        "prioridad señalizada", "prioridad derecha",
+        "prioridad peatonal", "prioridad ciclista",
+        "prioridad transporte público",
+        "vehículo emergencia prioridad",
+        "ceda omitido", "stop omitido"
+    ],
+
+    "velocidad_distancia": [
+        "velocidad inadecuada", "exceso velocidad",
+        "distancia insuficiente", "conducción lenta interferente"
+    ],
+
+    "impacto": [
+        "alcance trasero", "colisión frontal", "colisión fronto-lateral",
+        "colisión lateral", "colisión múltiple", "colisión en cadena",
+        "salida de vía", "atropello peatón", "atropello ciclista"
+    ],
+
+    "factores_especiales": [
+        "vehículo averiado", "vehículo inmovilizado",
+        "vehículo detenido indebidamente", "carga sobresaliente",
+        "carga mal asegurada", "alcohol", "drogas", "distracción"
+    ],
+
+    "senalizacion_defectuosa": [
+        "señal oculta", "señal caída", "señal en obras",
+        "semáforo averiado", "señalización confusa"
+    ]
+}
+ 
