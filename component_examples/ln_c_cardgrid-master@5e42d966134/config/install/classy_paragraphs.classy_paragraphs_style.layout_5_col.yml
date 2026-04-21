@@ -1,0 +1,6 @@
+langcode: en
+status: true
+dependencies: {  }
+id: layout_5_col
+label: '5 columns'
+classes: ln-layout-5-col

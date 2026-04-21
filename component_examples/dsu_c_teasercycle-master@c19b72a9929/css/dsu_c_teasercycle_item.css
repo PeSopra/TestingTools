@@ -1,0 +1,10 @@
+.paragraph--type--c-document-item {
+  display: inline-block;
+}
+.paragraph--type--c-document-item .field--name-field-c-title {
+  display: block;
+  margin-left: 25px;
+}
+.paragraph--type--c-document-item .field--name-field-c-image {
+  float: left;
+}

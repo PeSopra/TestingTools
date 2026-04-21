@@ -1,0 +1,115 @@
+<?php
+
+/**
+ * Implements HOOK_preprocess_theme().
+ */
+function dsu_c_teasercycle_theme($existing, $type, $theme, $path) {
+  return [
+    'paragraph__c_teasercycle_item' => [
+      'template' => 'paragraph--c-teasercycle-item',
+      'base hook' => 'paragraphs',
+    ],
+    'paragraph__c_teasercycle' => [
+      'template' => 'paragraph--c-teasercycle',
+      'base hook' => 'paragraphs',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for paragraph.html.twig.
+ */
+function dsu_c_teasercycle_preprocess_paragraph(&$variables) {
+  if ($variables['paragraph']->getType() == 'c_teasercycle') {
+    $variables['#attached']['library'][] = 'dsu_c_teasercycle/teasercycle';
+  }
+  elseif ($variables['paragraph']->getType() == 'c_teasercycle_item') {
+    $variables['#attached']['library'][] = 'dsu_c_teasercycle/teasercycle-item';
+    if (isset($variables['elements']['display_options'])) {
+      $new_content = [];
+      $field_count = count($variables['content']);
+      $weight = -10 * $field_count;
+      foreach ($variables['elements']['display_options'] as $display_option) {
+        if (isset($variables['content'][$display_option['value']])) {
+          $new_content[$display_option['value']] = $variables['content'][$display_option['value']];
+          $new_content[$display_option['value']]['#weight'] = $weight;
+          $weight += 10;
+        }
+      }
+      // Get link field url if field display hide also.
+      if (!empty($variables['paragraph']->get('field_c_link')->first())) {
+        if (strpos($variables['paragraph']->get('field_c_link')
+            ->getValue()[0]['uri'], 'entity:node') !== FALSE) {
+          $node_url = str_replace('entity:', '', $variables['paragraph']->get('field_c_link')
+            ->getValue()[0]['uri']);
+          $alias = \Drupal::service('path_alias.manager')
+            ->getAliasByPath('/' . $node_url);
+          $variables['field_c_link_url'] = $alias;
+        }
+        else {
+          $variables['field_c_link_url'] = $variables['paragraph']->get('field_c_link')
+            ->getValue()[0]['uri'];
+        }
+      }
+      $variables['content'] = $new_content;
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for field.html.twig.
+ */
+function dsu_c_teasercycle_preprocess_field(&$variables) {
+  if ($variables['field_name'] == 'field_c_teasercycle_item'
+    && $variables['entity_type'] == 'paragraph'
+    && $variables['element']['#object']->getType() == 'c_teasercycle') {
+    $teasercycle_paragraph = $variables['element']['#object'];
+    $display_options = $teasercycle_paragraph->get('field_c_display_options')
+      ->getValue();
+    if (!empty($display_options)) {
+      foreach ($variables['items'] as $key => $value) {
+        if ($value['content']['#theme'] == 'paragraph' && $value['content']['#paragraph']->getType() == 'c_teasercycle_item') {
+          $variables['items'][$key]['content']['display_options'] = $display_options;
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for slick-wrapper.html.twig.
+ */
+function dsu_c_teasercycle_preprocess_slick_wrapper(&$variables) {
+  if (isset($variables['element']['#field_name']) && $variables['element']['#field_name'] == 'field_c_teasercycle_item'
+    && $variables['settings']['target_type'] == 'paragraph'
+    && $variables['element']['#object']->getType() == 'c_teasercycle') {
+    $teasercycle_paragraph = $variables['element']['#object'];
+    $display_options = $teasercycle_paragraph->get('field_c_display_options')
+      ->getValue();
+    if (!empty($display_options)) {
+      foreach ($variables['items'] as $key => $value) {
+        $variables['items'][$key]['#display_options'] = $display_options;
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for slick.html.twig.
+ */
+function dsu_c_teasercycle_preprocess_slick(&$variables) {
+  if (isset($variables['element']['#display_options'])) {
+    foreach ($variables['items'] as $key => $value) {
+      $variables['items'][$key]['#display_options'] = $variables['element']['#display_options'];
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for slick-vanilla.html.twig.
+ */
+function dsu_c_teasercycle_preprocess_slick_vanilla(&$variables) {
+  if (isset($variables['element']['#display_options'])) {
+    $variables['item']['display_options'] = $variables['element']['#display_options'];
+  }
+}

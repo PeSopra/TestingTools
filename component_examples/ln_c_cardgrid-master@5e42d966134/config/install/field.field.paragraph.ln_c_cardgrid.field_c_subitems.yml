@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_c_subitems
+    - paragraphs.paragraphs_type.ln_c_cardgrid
+    - paragraphs.paragraphs_type.ln_c_grid_card_item
+  module:
+    - entity_reference_revisions
+id: paragraph.ln_c_cardgrid.field_c_subitems
+field_name: field_c_subitems
+entity_type: paragraph
+bundle: ln_c_cardgrid
+label: Subitems
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      ln_c_grid_card_item: ln_c_grid_card_item
+    negate: 0
+    target_bundles_drag_drop:
+      ln_c_grid_card_item:
+        weight: 0
+        enabled: true
+field_type: entity_reference_revisions

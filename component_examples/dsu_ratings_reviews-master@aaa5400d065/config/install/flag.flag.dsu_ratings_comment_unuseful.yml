@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+id: dsu_ratings_comment_unuseful
+label: 'DSU Ratings and Reviews Comment Unuseful'
+bundles:
+  - dsu_ratings_reviews_comment_type
+entity_type: comment
+global: false
+weight: -9
+flag_short: 'No'
+flag_long: ''
+flag_message: ''
+unflag_short: 'No'
+unflag_long: ''
+unflag_message: ''
+unflag_denied_text: ''
+flag_type: 'entity:comment'
+link_type: ajax_link
+flagTypeConfig:
+  show_in_links:
+    full: full
+  show_as_field: true
+  show_on_form: false
+  show_contextual_link: false
+  extra_permissions:
+    owner: '0'
+    parent_owner: '0'
+linkTypeConfig: {  }

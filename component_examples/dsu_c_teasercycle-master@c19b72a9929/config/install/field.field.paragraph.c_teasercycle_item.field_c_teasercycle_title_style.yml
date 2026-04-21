@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_c_teasercycle_title_style
+    - paragraphs.paragraphs_type.c_teasercycle_item
+  module:
+    - options
+id: paragraph.c_teasercycle_item.field_c_teasercycle_title_style
+field_name: field_c_teasercycle_title_style
+entity_type: paragraph
+bundle: c_teasercycle_item
+label: 'Title Style'
+description: 'Set Header style on title field  (H1-H6)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

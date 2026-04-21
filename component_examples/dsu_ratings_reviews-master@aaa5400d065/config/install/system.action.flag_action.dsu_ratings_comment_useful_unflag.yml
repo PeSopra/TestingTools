@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.dsu_ratings_comment_useful
+  module:
+    - flag
+id: flag_action.dsu_ratings_comment_useful_unflag
+label: 'Yes'
+type: comment
+plugin: 'flag_action:dsu_ratings_comment_useful_unflag'
+configuration:
+  flag_id: dsu_ratings_comment_useful
+  flag_action: unflag

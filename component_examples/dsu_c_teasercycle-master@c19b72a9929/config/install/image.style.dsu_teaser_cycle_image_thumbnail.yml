@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies: {  }
+name: dsu_teaser_cycle_image_thumbnail
+label: 'Teaser Cycle Image Thumbnail'
+effects:
+  acaf4dee-ef2b-4791-9cb1-63727f440f33:
+    uuid: acaf4dee-ef2b-4791-9cb1-63727f440f33
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 200
+      upscale: true
+

@@ -1,0 +1,49 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the dsu_ratings_reviews module.
+ */
+
+use Drupal\Core\Session\AccountInterface;
+
+/**
+ * Implements hook_install().
+ */
+function dsu_ratings_reviews_install() {
+  _dsu_ratings_reviews_set_permissions();
+}
+
+
+/**
+ * Set default comment and reply permissions for roles.
+ */
+function _dsu_ratings_reviews_set_permissions() {
+  user_role_grant_permissions(AccountInterface::ANONYMOUS_ROLE, [
+    'access comments',
+    'access content',
+    'flag dsu_ratings_comment_unuseful',
+    'flag dsu_ratings_comment_useful',
+    'unflag dsu_ratings_comment_unuseful',
+    'unflag dsu_ratings_comment_useful',
+    'view media'
+  ]);
+  user_role_grant_permissions(AccountInterface::AUTHENTICATED_ROLE, [
+    'access comments',
+    'access content',
+    'flag dsu_ratings_comment_unuseful',
+    'flag dsu_ratings_comment_useful',
+    'unflag dsu_ratings_comment_unuseful',
+    'unflag dsu_ratings_comment_useful',
+    'create dsu_comment_image media',
+    'post comments',
+    'view media'
+  ]);
+}
+
+/**
+ * Implements hook_update_last_removed().
+ */
+function dsu_ratings_reviews_update_last_removed(): int {
+  return 10301;
+}

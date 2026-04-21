@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.dsu_ratings_reviews_comment_type
+    - field.storage.comment.field_dsu_tos
+id: comment.dsu_ratings_reviews_comment_type.field_dsu_tos
+field_name: field_dsu_tos
+entity_type: comment
+bundle: dsu_ratings_reviews_comment_type
+label: 'I agree to the Terms & Conditions'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

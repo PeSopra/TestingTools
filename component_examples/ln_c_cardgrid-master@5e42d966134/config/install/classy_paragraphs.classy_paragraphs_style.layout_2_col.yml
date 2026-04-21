@@ -1,0 +1,6 @@
+langcode: en
+status: true
+dependencies: {  }
+id: layout_2_col
+label: '2 columns'
+classes: ln-layout-2-col

@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.dsu_ratings_reviews_comment_type
+    - field.storage.comment.field_dsu_recommend
+id: comment.dsu_ratings_reviews_comment_type.field_dsu_recommend
+field_name: field_dsu_recommend
+entity_type: comment
+bundle: dsu_ratings_reviews_comment_type
+label: 'Would you recommend this item?'
+description: ''
+required: false
+translatable: false
+default_value_callback: ''
+settings:
+  on_label: 'Yes, I recommend it.'
+  off_label: 'No, I do not recommend it.'
+field_type: boolean

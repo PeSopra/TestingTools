@@ -1,0 +1,6 @@
+text_center:
+  title: 'Text Center'
+  source: 'content/components/text_center.yml'
+text_left:
+  title: 'Text Left'
+  source: 'content/components/text_left.yml'

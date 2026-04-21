@@ -1,0 +1,21 @@
+{
+    "name": "lightnest/dsu_c_text",
+    "description": "The Text Component is used to add textual information on the page. It includes a WYSIWYG editor and CTA button.",
+    "type": "drupal-module",
+    "authors": [
+        {
+            "name": "Nestle",
+            "homepage": "https://lightnest.nestle.com"
+        }
+    ],
+    "keywords": [
+        "Basic Content Components"
+    ],
+    "require": {
+        "drupal/link_attributes": "^2.0",
+        "lightnest/dsu_c_core": "^2.0"
+    },
+    "extra": {
+        "lightnest-browser": true
+    }
+}

@@ -1,0 +1,16 @@
+name: 'Lightnest Ratings and Reviews'
+description: 'This module is available to all sites that will require ratings and reviews to be added to their site without contracting a third-party vendor and its completely free. It allows rating nodes with a “stars” widget to rate it from 1 to 5, as well as provides enhanced filtering options, a brand response and a moderator dashboard to control KPIs on such content.'
+type: module
+core_version_requirement: ^10 || ^11
+version: 4.3.0
+dependencies:
+  - drupal:comment
+  - drupal:text
+  - colorbox:colorbox
+  - ds:ds
+  - field_group:field_group
+  - flag:flag
+  - votingapi:votingapi
+  - lightnest:ln_m_core
+  - xls_serialization:xls_serialization
+package: Lightnest

@@ -1,0 +1,5 @@
+dsu_ratings_reviews.admin.config:
+  title: 'DSU Ratings and reviews'
+  base_route_name: dsu_ratings_reviews.admin.config
+  names:
+    - dsu_ratings_reviews.settings

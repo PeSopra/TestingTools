@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.c_teasercycle.field_c_display_options
+    - field.field.paragraph.c_teasercycle.field_c_teasercycle_item
+    - paragraphs.paragraphs_type.c_teasercycle
+  module:
+    - slick_paragraphs
+id: paragraph.c_teasercycle.default
+targetEntityType: paragraph
+bundle: c_teasercycle
+mode: default
+content:
+  field_c_teasercycle_item:
+    type: slick_paragraphs_vanilla
+    weight: 0
+    label: hidden
+    settings:
+      optionset: teaser_cycle_slick
+      skin: ''
+      view_mode: default
+      cache: 0
+      current_view_mode: default
+      override: false
+      overridables:
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        draggable: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      skin_arrows: ''
+      skin_dots: ''
+      style: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_c_display_options: true

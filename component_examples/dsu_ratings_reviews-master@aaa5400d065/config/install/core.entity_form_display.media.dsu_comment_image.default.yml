@@ -1,0 +1,36 @@
+langcode: en
+status: true
+config_replace: 'replace'
+dependencies:
+  config:
+    - field.field.media.dsu_comment_image.field_media_image
+    - image.style.thumbnail
+    - media.type.dsu_comment_image
+  module:
+    - image
+id: media.dsu_comment_image.default
+targetEntityType: media
+bundle: dsu_comment_image
+mode: default
+content:
+  field_media_image:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  status: true
+  uid: true

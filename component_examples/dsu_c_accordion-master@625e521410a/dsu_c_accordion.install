@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Install, update, and uninstall functions for the dsu_c_accordion module.
+ */
+
+/**
+ * Implements hook_update_last_removed().
+ */
+function dsu_c_accordion_update_last_removed(): int {
+  return 9102;
+}

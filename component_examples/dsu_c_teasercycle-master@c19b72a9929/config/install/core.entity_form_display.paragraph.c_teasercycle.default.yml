@@ -1,0 +1,57 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.c_teasercycle.field_c_display_options
+    - field.field.paragraph.c_teasercycle.field_c_teasercycle_item
+    - paragraphs.paragraphs_type.c_teasercycle
+  module:
+    - paragraphs
+    - options_table
+    - paragraphs_ee
+    - paragraphs_features
+    - paragraphs_previewer
+id: paragraph.c_teasercycle.default
+targetEntityType: paragraph
+bundle: c_teasercycle
+mode: default
+content:
+  field_c_display_options:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_table
+    region: content
+  field_c_teasercycle_item:
+    type: paragraphs_previewer
+    weight: 6
+    settings:
+      title: 'Teaser Cycle Item'
+      title_plural: 'Teaser Cycle Items'
+      edit_mode: closed
+      closed_mode: preview
+      autocollapse: none
+      closed_mode_threshold: '0'
+      add_mode: modal
+      form_display_mode: default
+      default_paragraph_type: c_teasercycle_item
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: 0
+    third_party_settings:
+      paragraphs_features:
+        add_in_between: true
+        show_drag_and_drop: true
+        delete_confirmation: false
+        split_text: false
+      paragraphs_ee:
+        paragraphs_ee:
+          dialog_style: tiles
+          easy_access_count: 0
+          dialog_off_canvas: false
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

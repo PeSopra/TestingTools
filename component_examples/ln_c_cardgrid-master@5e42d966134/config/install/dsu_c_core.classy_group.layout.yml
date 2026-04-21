@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+id: layout
+label: Layout
+multiple: false
+bundles:
+  - ln_c_cardgrid
+classys:
+  - layout_1_col
+  - layout_2_col
+  - layout_3_col
+  - layout_4_col
+  - layout_5_col

@@ -1,0 +1,6 @@
+langcode: en
+status: true
+dependencies: {  }
+id: layout_4_col
+label: '4 columns'
+classes: ln-layout-4-col

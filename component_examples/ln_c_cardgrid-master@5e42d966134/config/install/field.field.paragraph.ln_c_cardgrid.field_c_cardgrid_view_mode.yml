@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_c_cardgrid_view_mode
+    - paragraphs.paragraphs_type.ln_c_cardgrid
+  module:
+    - options
+id: paragraph.ln_c_cardgrid.field_c_cardgrid_view_mode
+field_name: field_c_cardgrid_view_mode
+entity_type: paragraph
+bundle: ln_c_cardgrid
+label: 'View mode'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

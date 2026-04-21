@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_c_cardgrid_view_mode
+field_name: field_c_cardgrid_view_mode
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: bottom_text_box
+      label: 'Bottom text box'
+    -
+      value: extended_card
+      label: 'Extended cards'
+    -
+      value: extended_card_title_image
+      label: 'Extended cards - Title on image'
+    -
+      value: full_color_box
+      label: 'Full color box'
+    -
+      value: hover_card_box
+      label: 'Hover card box'
+    -
+      value: hover_card_box_profile
+      label: 'Hover card box - Profile'
+    -
+      value: rollover_card
+      label: 'Rollover card'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

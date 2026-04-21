@@ -1,0 +1,15 @@
+teasercycle:
+  version: 1.x
+  css:
+    component:
+      css/dsu_c_teasercycle.css: {}
+  js:
+    js/dsu_c_teasercycle.js: {}
+  dependencies:
+    - slick/slick.theme
+teasercyle-item:
+  version: 1.x
+  css:
+    theme:
+      css/dsu_c_teasercycle_item.css: {}
+

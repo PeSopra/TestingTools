@@ -1,0 +1,33 @@
+{
+    "name": "lightnest/dsu_ratings_reviews",
+    "description": "This module is available to all sites that will require ratings and reviews to be added to their site without contracting a third-party vendor and its completely free. It allows rating nodes with a “stars” widget to rate it from 1 to 5, as well as provides enhanced filtering options, a brand response and a moderator dashboard to control KPIs on such content.",
+    "type": "drupal-module",
+    "authors": [
+        {
+            "name": "Nestle",
+            "homepage": "https://lightnest.nestle.com"
+        }
+    ],
+    "keywords": [
+        "UGC"
+    ],
+    "require": {
+        "drupal/ds": "^3.15",
+        "drupal/field_group": "^4.0@alpha",
+        "drupal/flag": "^4.0@beta",
+        "drupal/votingapi": "^3.0@beta",
+        "drupal/xls_serialization": "^2.0",
+        "lightnest/ln_m_core": "^4.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "lightnest-browser": true,
+        "patches": {
+            "drupal/votingapi": {
+                "3451390 - Automated Drupal 11 compatibility fixes for votingapi": "https://www.drupal.org/files/issues/2024-05-30/votingapi.3.x-dev.rector.patch"
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+.paragraph--type--c-text {
+  padding: 1rem;
+  --dsu_c_text-color: currentColor;
+  --dsu_c_text-color2: currentColor;
+  --dsu_c_text-background: transparent;
+  --dsu_c_text-btnColor: #FFFF;
+  --dsu_c_text-btnBackground: #333;
+  color: var(--dsu_c_text-color);
+  background-color: var(--dsu_c_text-background); }
+  @media only screen and (min-width: 768px) {
+    .paragraph--type--c-text {
+      padding: 1.5rem; } }
+  @media only screen and (min-width: 1024px) {
+    .paragraph--type--c-text {
+      padding: 3rem; } }
+  .paragraph--type--c-text.horizontal_position_center {
+    text-align: center !important; }
+  .paragraph--type--c-text.horizontal_position_right {
+    text-align: right !important; }
+  .paragraph--type--c-text.vertical_top {
+    padding-bottom: 2rem; }
+    @media only screen and (min-width: 768px) {
+      .paragraph--type--c-text.vertical_top {
+        padding-bottom: 3rem; } }
+    @media only screen and (min-width: 1024px) {
+      .paragraph--type--c-text.vertical_top {
+        padding-bottom: 6rem; } }
+  .paragraph--type--c-text.vertical_bottom {
+    padding-top: 2rem; }
+    @media only screen and (min-width: 768px) {
+      .paragraph--type--c-text.vertical_bottom {
+        padding-top: 3rem; } }
+    @media only screen and (min-width: 1024px) {
+      .paragraph--type--c-text.vertical_bottom {
+        padding-top: 6rem; } }
+  .paragraph--type--c-text.white-text {
+    --dsu_c_text-color: #FFF;
+    --dsu_c_text-color2: #FFF;
+    --dsu_c_text-background: #333;
+    --dsu_c_text-btnColor: #333;
+    --dsu_c_text-btnBackground: #FFFF; }
+  .paragraph--type--c-text.dark-text {
+    --dsu_c_text-color: #777;
+    --dsu_c_text-color2: #333;
+    --dsu_c_text-background: #FFF;
+    --dsu_c_text-btnColor: #FFF;
+    --dsu_c_text-btnBackground: #333; }
+  .paragraph--type--c-text a {
+    color: var(--dsu_c_text-color2); }
+    .paragraph--type--c-text a:hover {
+      color: currentColor; }
+  .paragraph--type--c-text strong, .paragraph--type--c-text .field--name-field-c-advanced-title, .paragraph--type--c-text .field--name-field-c-advanced-subtitle {
+    color: var(--dsu_c_text-color2); }
+  .paragraph--type--c-text .field--name-field-c-link a {
+    display: inline-block;
+    padding: 0.7rem 1.625rem;
+    border-radius: 5px;
+    background: var(--dsu_c_text-btnBackground);
+    color: var(--dsu_c_text-btnColor); }
+  .paragraph--type--c-text .contextual-links a {
+    color: initial; }
+  .paragraph--type--c-text .field--name-field-c-advanced-title,
+  .paragraph--type--c-text .field--name-field-c-advanced-subtitle {
+    margin-bottom: 10px; }
+  .paragraph--type--c-text .text-large-bold-underline {
+    margin: 0 0 8px; }
+  .paragraph--type--c-text .text-large-plain {
+    margin: 0 0 26px; }

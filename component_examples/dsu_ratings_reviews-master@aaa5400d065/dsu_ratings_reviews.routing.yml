@@ -1,0 +1,32 @@
+dsu_ratings_reviews.admin.index:
+  path: '/admin/config/lightnest/dsu_ratings_reviews'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Lightnest Ratings & Reviews'
+  requirements:
+    _permission: 'access ratings reviews dashboard'
+
+dsu_ratings_reviews.admin.config:
+  path: '/admin/config/lightnest/dsu_ratings_reviews/settings'
+  defaults:
+    _form: '\Drupal\dsu_ratings_reviews\Form\RatingsReviewsSettingsForm'
+    _title: 'Lightnest Rating & Reviews settings'
+  requirements:
+    _permission: 'access ratings reviews moderator settings'
+
+dsu_ratings_reviews.admin.dashboard:
+  path: '/admin/config/lightnest/dsu_ratings_reviews/dashboard'
+  defaults:
+    _form: '\Drupal\dsu_ratings_reviews\Form\DashboardForm'
+    _title: 'Lightnest Ratings & Reviews Dashboard'
+  requirements:
+    _permission: 'access ratings reviews dashboard'
+
+dsu_ratings_reviews.tos:
+  path: '/ratings/tos'
+  defaults:
+    _controller: '\Drupal\dsu_ratings_reviews\Controller\RatingsReviewsTermsController::content'
+    _title: 'Terms & Conditions'
+  requirements:
+    _permission: 'access content'
+

@@ -1,0 +1,164 @@
+.comment-dsu-ratings-reviews-comment-type-form .fivestar-basic div.fivestar-widget-static .star {
+ transition: all 0.2s;
+}
+.comment-dsu-ratings-reviews-comment-type-form .fivestar-basic div.fivestar-widget-static .star.hover {
+  background-position: 0 -32px;
+}
+.comment-dsu-ratings-reviews-comment-type-form .fivestar-basic div.fivestar-widget-static .star span {
+  transition: all 0.2s;
+}
+.comment-dsu-ratings-reviews-comment-type-form .fivestar-basic div.fivestar-widget-static .star span.on {
+  background-position: 0 -16px;
+}
+.comment-dsu-ratings-reviews-comment-type-form .fivestar-basic div.fivestar-widget-static .star.hover span {
+  background-position: 0 -32px;
+}
+
+.comment-dsu-ratings-reviews-comment-type-form .field--name-field-dsu-recommend div.form-item-field-dsu-recommend {
+  margin: 4px;
+  display: inline-block;
+  overflow: auto;
+  padding: 0;
+  width: 350px;
+  vertical-align:bottom;
+}
+
+.comment-dsu-ratings-reviews-comment-type-form .field--name-field-dsu-recommend div.form-item-field-dsu-recommend label {
+  text-align: center;
+  padding: 7px 5px;
+  display: block;
+  font-weight: bold;
+  color: teal;
+  text-decoration: none;
+  border: 1px solid teal;
+  border-radius: 4px;
+  background-color: aliceblue;
+  cursor: pointer;
+}
+
+.comment-dsu-ratings-reviews-comment-type-form .field--name-field-dsu-recommend div.form-item-field-dsu-recommend label:hover {
+  background-color: lightcyan;
+}
+
+.comment-dsu-ratings-reviews-comment-type-form .field--name-field-dsu-recommend div.form-item-field-dsu-recommend input:checked + label {
+  background-color: midnightblue;
+  border-color: blue;
+  color: white;
+}
+
+.comment-dsu-ratings-reviews-comment-type-form .field--name-field-dsu-recommend div.form-item-field-dsu-recommend input:checked + label:hover {
+  background-color: royalblue;
+  color: white;
+  border-color: midnightblue;
+}
+
+.comment-dsu-ratings-reviews-comment-type-form .field--name-field-dsu-recommend .form-item-field-dsu-recommend:last-child {
+  display: none;
+}
+
+.view-dsu-ratings-node-view .js-form-submit {
+   display: none;
+ }
+
+/*Recommended and Most useful first buttons*/
+.view-dsu-ratings-node-view div.checkbox {
+  margin: 4px;
+  background-color: aliceblue;
+  border-radius: 4px;
+  overflow: auto;
+  padding: 0;
+  width: 250px;
+  display: inline-block;
+}
+
+.view-dsu-ratings-node-view div.checkbox label {
+  text-align: center;
+  padding: 7px 5px;
+  display: block;
+  border-radius: 4px;
+  font-weight: bold;
+  color: teal;
+  border: 1px solid teal;
+}
+
+.view-dsu-ratings-node-view div.checkbox input {
+  position: absolute;
+  top: -9999px;
+}
+
+.view-dsu-ratings-node-view div.checkbox input:checked + label {
+  background-color: midnightblue;
+  border-color: blue;
+  color: white;
+}
+
+.view-dsu-ratings-node-view div.checkbox input + label:hover {
+  background-color: lightcyan;
+}
+
+.view-dsu-ratings-node-view div.checkbox input:checked + label:hover {
+  background-color: royalblue;
+  color: white;
+  border-color: midnightblue;
+}
+
+/* Useful flags */
+.usefulness {
+  clear:both
+}
+
+.usefulness div.flag {
+  margin: 4px;
+  display: inline-block;
+  overflow: auto;
+  padding: 0;
+  width: 100px;
+  vertical-align:bottom;
+}
+
+.usefulness div.flag a {
+  text-align: center;
+  padding: 7px 5px;
+  display: block;
+  font-weight: bold;
+  color: teal;
+  text-decoration: none;
+  border: 1px solid teal;
+  border-radius: 4px;
+  background-color: aliceblue;
+}
+
+.usefulness div.flag:hover a {
+  background-color: lightcyan;
+}
+
+.usefulness div.flag.action-unflag:hover a {
+  background-color: royalblue;
+  border-color: midnightblue;
+}
+
+.usefulness div.flag.action-unflag a {
+  color: white;
+  border-color: blue;
+  background-color: midnightblue;
+}
+
+.usefulness .flag .ajax-progress {
+  display:none;
+}
+
+.usefulness .flag p {
+  display:none;
+}
+
+.dsu-ratings-reviews-comment .form-item-vote small.description {
+  display:none;
+}
+
+.dsu-ratings-reviews-comment article.comment span.comment-forbidden {
+  display: none;
+}
+
+.view-dsu-ratings-node-view div.field--name-field-dsu-ratings {
+  pointer-events: none;
+}

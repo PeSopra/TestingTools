@@ -1,0 +1,6 @@
+langcode: en
+status: true
+dependencies: {  }
+id: layout_1_col
+label: '1 column'
+classes: ln-layout-1-col

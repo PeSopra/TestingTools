@@ -1,0 +1,30 @@
+entity_type: paragraph
+values:
+  type: c_image
+  field_c_image:
+    entity_type: media
+    values:
+      - bundle: image
+        name: 'San Pellegrino'
+        field_media_image:
+          entity_type: file
+          values:
+            - filename: 'san-pellegrino.jpg'
+              source: 'content/media/san-pellegrino.jpg'
+  field_c_advanced_title:
+    - value: 'Pumpkin spice caramelization'
+      html_tag: h1
+  field_c_advanced_subtitle:
+    - value: 'Strong, dripper percolator iced brewed et caramelization mocha redeye'
+      html_tag: h2
+  field_c_text:
+    - value: '<p>Macchiato, latte, turkish cinnamon dripper americano strong half and half. Acerbic sugar cultivar est carajillo aftertaste robust.</p>'
+      format: rich_text
+  field_c_link:
+    - uri: https://www.nestle.com
+      title: 'Button Text'
+      options:
+        attributes:
+          target: _blank
+  classy:
+    - target_id: dsu_text_position_middle_center

@@ -1,0 +1,137 @@
+entity_type: paragraph
+values:
+  type: c_teasercycle
+  field_c_display_options:
+    - field_c_image
+    - field_c_title
+    - field_c_text
+    - field_c_link
+  field_c_teasercycle_item:
+    entity_type: paragraph
+    values:
+      - type: c_teasercycle_item
+        field_c_link:
+          - uri: https://www.lightnest.com
+            title: 'Link 1'
+            options:
+              attributes:
+                target: _blank
+        field_c_image:
+          entity_type: media
+          values:
+            - bundle: image
+              name: 'NAN'
+              field_media_image:
+                entity_type: file
+                values:
+                  - filename: 'nan-800.jpg'
+                    source: 'content/media/nan-800.jpg'
+        field_c_title: 'Galão arabica'
+        field_c_text:
+          - value: '<p>Medium siphon, lungo irish whipped aftertaste</p>'
+            format: rich_text
+      - type: c_teasercycle_item
+        field_c_link:
+          - uri: https://www.lightnest.com
+            title: 'Link 2'
+            options:
+              attributes:
+                target: _blank
+        field_c_image:
+          entity_type: media
+          values:
+            - bundle: image
+              name: 'Nido'
+              field_media_image:
+                entity_type: file
+                values:
+                  - filename: 'nido-800.jpg'
+                    source: 'content/media/nido-800.jpg'
+        field_c_title: 'French press'
+        field_c_text:
+          - value: '<p>Café au lait french press coffee lungo cappuccino kopi-luwak</p>'
+            format: rich_text
+      - type: c_teasercycle_item
+        field_c_link:
+          - uri: https://www.lightnest.com
+            title: 'Link 3'
+            options:
+              attributes:
+                target: _blank
+        field_c_image:
+          entity_type: media
+          values:
+            - bundle: image
+              name: 'Gerber Organic'
+              field_media_image:
+                entity_type: file
+                values:
+                  - filename: 'gerber-organic.jpg'
+                    source: 'content/media/gerber-organic.jpg'
+        field_c_title: 'Aged acerbic'
+        field_c_text:
+          - value: '<p>Sweet americano grounds aromatic to go doppio fair trade</p>'
+            format: rich_text
+      - type: c_teasercycle_item
+        field_c_link:
+          - uri: https://www.lightnest.com
+            title: 'Link 4'
+            options:
+              attributes:
+                target: _blank
+        field_c_image:
+          entity_type: media
+          values:
+            - bundle: image
+              name: 'San Pellegrino'
+              field_media_image:
+                entity_type: file
+                values:
+                  - filename: 'san-pellegrino.jpg'
+                    source: 'content/media/san-pellegrino.jpg'
+        field_c_title: 'Medium siphon'
+        field_c_text:
+          - value: '<p>Lungo irish whipped aftertaste chicory cinnamon.</p>'
+            format: rich_text
+      - type: c_teasercycle_item
+        field_c_link:
+          - uri: https://www.lightnest.com
+            title: 'Link 5'
+            options:
+              attributes:
+                target: _blank
+        field_c_image:
+          entity_type: media
+          values:
+            - bundle: image
+              name: 'Purina One'
+              field_media_image:
+                entity_type: file
+                values:
+                  - filename: 'purina-one-cats.jpg'
+                    source: 'content/media/purina-one-cats.jpg'
+        field_c_title: 'Mazagran coffee'
+        field_c_text:
+          - value: '<p>Froth saucer flavour, ristretto, dripper, kopi-luwak breve at a cup strong crema.</p>'
+            format: rich_text
+      - type: c_teasercycle_item
+        field_c_link:
+          - uri: https://www.lightnest.com
+            title: 'Link 6'
+            options:
+              attributes:
+                target: _blank
+        field_c_image:
+          entity_type: media
+          values:
+            - bundle: image
+              name: Les Recettes de l'Atelier
+              field_media_image:
+                entity_type: file
+                values:
+                  - filename: 'atelier-chocolate-800.jpg'
+                    source: 'content/media/atelier-chocolate-800.jpg'
+        field_c_title: 'Carajillo americano'
+        field_c_text:
+          - value: '<p>Mazagran in, fair trade cream siphon cup plunger pot turkish froth.</p>'
+            format: rich_text

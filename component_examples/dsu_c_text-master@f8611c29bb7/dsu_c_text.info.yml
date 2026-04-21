@@ -1,0 +1,9 @@
+name: 'Lightnest Components: Text'
+package: 'Lightnest Components'
+version: 3.0.0
+description: 'The Text Component is used to add textual information on the page. It includes a WYSIWYG editor and CTA button.'
+type: module
+core_version_requirement: ^10 || ^11
+dependencies:
+  - link_attributes:link_attributes
+  - lightnest:dsu_c_core

@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * @file
+ * Contains newnestlegermany_components_accordion.module.
+ */
+
+use Drupal\paragraphs\Entity\Paragraph;
+/**
+ * Implements hook_theme().
+ */
+function dsu_c_accordion_theme($existing, $type, $theme, $path) {
+  return [
+    'paragraph__accordion' => [
+      'template' => 'paragraph--accordion',
+      'base hook' => 'paragraph',
+    ],
+    'paragraph__accordion_item' => [
+      'template' => 'paragraph--accordion-item',
+      'base hook' => 'paragraph',
+    ],
+  ];
+}
+
+
+/**
+ * Implements hook_preprocess_HOOK() for paragraph.html.twig.
+ */
+function dsu_c_accordion_preprocess_paragraph__accordion(&$variables) {
+  // Load the library when the rendered element is a  dsu_c_accordion Paragraph.
+  $variables['#attached']['library'][] = 'dsu_c_accordion/accordion';
+}

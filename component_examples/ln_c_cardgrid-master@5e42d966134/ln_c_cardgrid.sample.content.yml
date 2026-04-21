@@ -1,0 +1,21 @@
+cardgrid_buttom_text_box:
+  title: 'Cardgrid buttom text box'
+  source: 'content/components/cardgrid_buttom_text_box.yml'
+cardgrid_extended_card:
+  title: 'Cardgrid extended card'
+  source: 'content/components/cardgrid_extended_card.yml'
+cardgrid_extended_card_title_image:
+  title: 'Cardgrid extended card title image'
+  source: 'content/components/cardgrid_extended_card_title_image.yml'
+cardgrid_full_color_box:
+  title: 'Cardgrid full color box'
+  source: 'content/components/cardgrid_full_color_box.yml'
+cardgrid_hover_card_box:
+  title: 'Cardgrid hover card box'
+  source: 'content/components/cardgrid_hover_card_box.yml'
+cardgrid_hover_card_box_profile:
+  title: 'Cardgrid hover card box profile'
+  source: 'content/components/cardgrid_hover_card_box_profile.yml'
+cardgrid_rollover_card:
+  title: 'Cardgrid rollover card'
+  source: 'content/components/cardgrid_rollover_card.yml'

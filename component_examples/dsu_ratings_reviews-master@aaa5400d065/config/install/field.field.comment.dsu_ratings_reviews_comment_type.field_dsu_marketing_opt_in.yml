@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.dsu_ratings_reviews_comment_type
+    - field.storage.comment.field_dsu_marketing_opt_in
+id: comment.dsu_ratings_reviews_comment_type.field_dsu_marketing_opt_in
+field_name: field_dsu_marketing_opt_in
+entity_type: comment
+bundle: dsu_ratings_reviews_comment_type
+label: 'Marketing opt-in'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

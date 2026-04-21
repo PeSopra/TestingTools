@@ -1,0 +1,9 @@
+name: 'Ligtnest Grid Card Component'
+package: 'Lightnest Components'
+description: 'Provides a component to display a grid of cards with images and text.'
+type: module
+version: 3.0.1
+core_version_requirement: ^10 || ^11
+dependencies:
+  - link_attributes:link_attributes
+  - lightnest:dsu_c_core

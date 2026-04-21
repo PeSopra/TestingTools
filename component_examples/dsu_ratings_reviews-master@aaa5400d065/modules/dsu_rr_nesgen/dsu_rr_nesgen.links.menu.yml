@@ -1,0 +1,6 @@
+dsu_rr_nesgen.settings_form:
+  title: 'NesGen integration'
+  route_name: dsu_rr_nesgen.settings_form
+  description: 'Configure NesGen integration'
+  parent: dsu_ratings_reviews.admin.index
+  weight: 1

@@ -1,0 +1,64 @@
+entity_type: paragraph
+values:
+  type: ln_c_cardgrid
+  field_c_cardgrid_view_mode: bottom_text_box
+  field_c_advanced_title:
+    - value: 'CARD Grid - Bottom text box'
+      html_tag: h1
+  field_c_subitems:
+    entity_type: paragraph
+    values:
+      - type: ln_c_grid_card_item
+        field_c_advanced_title:
+          - value: 'Steamed bar dripper'
+            html_tag: h2
+        field_c_advanced_subtitle:
+          - value: 'Iced as breve, spoon cortado java redeye mocha foam'
+            html_tag: h3
+        field_c_text:
+          - value: '<p>Steamed bar dripper galão aftertaste shop java. Iced as breve, spoon cortado java redeye mocha foam qui cappuccino latte. Plunger pot viennese lungo milk, aftertaste percolator caramelization medium aged frappuccino.</p>'
+            format: rich_text
+        field_c_image:
+          entity_type: media
+          values:
+            - bundle: image
+              name: 'NAN'
+              field_media_image:
+                entity_type: file
+                values:
+                  - filename: 'nan.jpg'
+                    source: 'content/media/nan.jpg'
+        field_c_link:
+          - uri: internal:/
+            title: 'More'
+            options:
+              attributes:
+                target: _blank
+      - type: ln_c_grid_card_item
+        field_c_advanced_title:
+          - value: 'Americano decaffeinated coffee'
+            html_tag: h2
+        field_c_advanced_subtitle:
+          - value: 'Redeye as froth, cup filter cup percolator'
+            html_tag: h3
+        field_c_text:
+          - value: '<p>Americano decaffeinated coffee caffeine extra turkish, to go turkish single shot est crema milk. Redeye as froth, cup filter cup percolator con panna irish saucer. Shop pumpkin spice rich medium eu instant lungo instant viennese.</p>'
+            format: rich_text
+        field_c_image:
+          entity_type: media
+          values:
+            - bundle: image
+              name: 'Purina One'
+              field_media_image:
+                entity_type: file
+                values:
+                  - filename: 'purina-one-cats.jpg'
+                    source: 'content/media/purina-one-cats.jpg'
+        field_c_link:
+          - uri: internal:/
+            title: 'More'
+            options:
+              attributes:
+                target: _blank
+        classy:
+          - target_id: dsu_classy_content_light_color

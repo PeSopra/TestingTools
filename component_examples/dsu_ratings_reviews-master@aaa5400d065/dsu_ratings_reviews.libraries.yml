@@ -1,0 +1,40 @@
+dsu-event-tracking:
+  footer: true
+  version: 1.x
+  css:
+    theme:
+      assets/css/dsu-product-rating.css: {}
+  js:
+    assets/js/dsu_event_tracking.js:
+  dependencies:
+    - core/jquery
+    - core/drupal
+
+dsu-rating-dashboard:
+  footer: true
+  version: 1.x
+  css:
+    theme:
+      assets/css/dsu-rating-dashboard.css: {}
+
+ratings-autosubmit:
+  version: 1.0
+  js:
+    assets/js/ratings_autosubmit.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/once
+
+fivestar.base:
+  version: VERSION
+  css:
+    component:
+      assets/css/fivestar/fivestar.css: {}
+  js:
+    assets/js/fivestar/fivestar.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/once
+    - core/drupal.ajax

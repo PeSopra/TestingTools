@@ -1,0 +1,8 @@
+services:
+  dsu_rr_nesgen.utils:
+    class: Drupal\dsu_rr_nesgen\Services\Utils
+    arguments: [ '@config.factory', '@logger.channel.dsu_rr_nesgen', '@entity_type.manager', '@dsu_core.notice', '@datetime.time', '@ln_nesgen.client']
+  logger.channel.dsu_rr_nesgen:
+    class: Drupal\Core\Logger\LoggerChannel
+    factory: logger.factory:get
+    arguments: ['dsu_rr_nesgen']

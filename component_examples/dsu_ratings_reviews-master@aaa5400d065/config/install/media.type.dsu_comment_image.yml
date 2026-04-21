@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {}
+third_party_settings: {}
+id: dsu_comment_image
+label: 'Comment image'
+description: 'Media image for rating comments to be reviewed and moderated separately.'
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map: {  }

@@ -1,0 +1,62 @@
+# Changelog
+
+## 3.0.1
+- A11Y: Color Contrast Issues
+- A11Y: Keyboard Navigation Issues
+
+## 3.0.0
+- Prepare for Drupal 11
+- Clean and updated dependencies
+
+## 2.6.0
+- Adaptations to use media_library as default widget instead of entity_browser
+
+## 2.5.0
+-A11Y: Enabled aria-label attribute for links
+
+## 2.4.0
+- Prepare module for Lightnest browser
+- Update link_attributes dependency for a major release
+- Apply changes for refactor ln_sample_content module
+
+## 2.3.1
+- Fix fields as translatable by default for multilanguage sites
+
+## 2.3.0
+- Prepare for Drupal 10
+- Clean and updated dependencies
+
+## 2.2.2
+- Improvement css
+
+## 2.2.1
+- Refactor post_update for performance improvement
+
+## 2.2.0
+- Make accessibility improvements
+
+## 2.1.1
+- Improvement css for better practices
+
+## 2.1.0
+- Prepare for new paragraphs_ee version
+
+## 2.0.0
+- Refactor Card component
+- Refactor Component Core: Remove id field for generic one.
+
+## 1.0.4
+- Added paragraph features too enhance editorial experience.
+- Go to admin/config/development/features/edit/dsu_c_slider
+- Import latest configuration.
+- rel attribute added if target exist on anchor tag.
+
+##Validation
+- Add the component on a page and validate.
+
+## 1.0.3
+- Added sample content for ln_c_cardgrid.
+- Bug fix : Rollover Card Grid || '+' icon is not properly aligned.
+
+##Validation
+- Add the component on a page and validate.

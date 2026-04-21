@@ -1,0 +1,17 @@
+services:
+  ratings_reviews.utils:
+    class: Drupal\dsu_ratings_reviews\Services\RatingsReviewsUtils
+    arguments: ['@entity_type.manager']
+  ratings_reviews.route_subscriber:
+    class: Drupal\dsu_ratings_reviews\Routing\RatingsReviewsRouteSubscriber
+    tags:
+      - { name: event_subscriber }
+  ratings_reviews.mail_adapter:
+    class: Drupal\dsu_ratings_reviews\Services\RatingsReviewsMailAdapter
+    arguments: ['@entity_type.manager', '@current_user', '@config.factory', '@messenger', '@token']
+  ratings_reviews.flag_adapter:
+    class: Drupal\dsu_ratings_reviews\Services\RatingsReviewsFlagAdapter
+    arguments: ['@flag']
+  ratings_reviews.display_adapter:
+    class: Drupal\dsu_ratings_reviews\Services\RatingsReviewsDisplayAdapter
+    arguments: [ '@entity_type.manager', '@current_user', '@current_route_match', '@extension.list.module', '@ratings_reviews.utils' ]

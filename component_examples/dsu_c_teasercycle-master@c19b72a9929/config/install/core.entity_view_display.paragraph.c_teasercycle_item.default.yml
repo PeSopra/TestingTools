@@ -1,0 +1,65 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.c_teasercycle_item.field_c_image
+    - field.field.paragraph.c_teasercycle_item.field_c_link
+    - field.field.paragraph.c_teasercycle_item.field_c_teasercycle_title_style
+    - field.field.paragraph.c_teasercycle_item.field_c_text
+    - field.field.paragraph.c_teasercycle_item.field_c_title
+    - image.style.dsu_teaser_cycle_image_thumbnail
+    - paragraphs.paragraphs_type.c_teasercycle_item
+  module:
+    - link
+    - media
+    - options
+    - text
+id: paragraph.c_teasercycle_item.default
+targetEntityType: paragraph
+bundle: c_teasercycle_item
+mode: default
+content:
+  field_c_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: dsu_teaser_cycle_image_thumbnail
+      image_link: ''
+    third_party_settings: {  }
+    type: media_thumbnail
+    region: content
+  field_c_link:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_c_teasercycle_title_style:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_c_text:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_c_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

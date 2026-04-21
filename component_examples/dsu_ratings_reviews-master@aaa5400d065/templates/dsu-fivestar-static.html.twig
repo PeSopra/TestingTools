@@ -1,0 +1,23 @@
+<div class="fivestar-static-form-item">
+  <div class="fivestar-basic">
+    {% set classes = [
+      'fivestar-widget-static',
+      'fivestar-widget-static-' ~ vote_type|clean_class,
+      'fivestar-widget-static-' ~ stars|clean_class,
+      'clearfix',
+    ] %}
+    <div {{ attributes.addClass(classes) }}>
+      {% for item in items %}
+        <div class="star star-{{ loop.index + 1 }} star-{{ loop.index is odd ? 'odd' : 'even' }} {{ loop.first ? 'star-first' : '' }} {{ loop.last ? 'star-last' : '' }}">
+          {% if star.percent %}
+            <span class="{{ item.active ? 'on' : 'off' }}" style="width:{{ item.percent }}%">{{ loop.first ? numeric_rating : '' }}</span>
+          {% else %}
+            <span class="{{ item.active ? 'on' : 'off' }}">{{ loop.first ? numeric_rating : '' }}</span>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+

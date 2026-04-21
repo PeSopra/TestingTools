@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Install, update, and uninstall functions for the dsu_c_text module.
+ */
+
+/**
+ * Refactor dsu_c_text module
+ */
+function dsu_c_text_update_10201() {
+  \Drupal::service('dsu_core.config_replace')->rewriteModuleConfig('dsu_c_text');
+}
+
+function dsu_c_text_update_dependencies() {
+  $dependencies['dsu_c_text'][10201] = [
+    'dsu_c_core' => 9101,
+  ];
+  return $dependencies;
+}

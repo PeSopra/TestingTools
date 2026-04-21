@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.dsu_ratings_reviews_comment_type
+    - field.storage.comment.field_display_name
+id: comment.dsu_ratings_reviews_comment_type.field_display_name
+field_name: field_display_name
+entity_type: comment
+bundle: dsu_ratings_reviews_comment_type
+label: 'Display name'
+description: 'Please add the Brand name, or the desired text that will appear instead of the username in the response'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

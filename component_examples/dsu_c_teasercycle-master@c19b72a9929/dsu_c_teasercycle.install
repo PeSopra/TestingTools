@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Install, update, and uninstall functions for the dsu_c_teasercycle module.
+ */
+
+
+/**
+ * Implements hook_update().
+ */
+function dsu_c_teasercycle_update_10201() {
+  \Drupal::service('dsu_core.config_replace')->rewriteModuleConfig('dsu_c_teasercycle');
+}
+
+function dsu_c_teasercycle_update_dependencies() {
+  $dependencies['dsu_c_teasercycle'][10201] = [
+    'dsu_c_core' => 9101,
+  ];
+  return $dependencies;
+}

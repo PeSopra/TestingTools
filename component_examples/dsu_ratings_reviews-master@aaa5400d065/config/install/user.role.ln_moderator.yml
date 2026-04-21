@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies: {}
+third_party_settings: {}
+id: ln_moderator
+label: Moderator
+weight: 11
+is_admin: false
+permissions:
+  - 'access content overview'
+  - 'access ratings reviews dashboard'
+  - 'administer comments'
+  - 'reply rating comments'
+  - 'skip comment approval'
+  - 'view the administration theme'
+  - 'access ratings reviews moderator settings'

@@ -1,0 +1,77 @@
+<div class="ratings-dashboard">
+  <div class="ratings-content-type">
+    {% if entity is empty %}
+      <h2>{{ 'Content type' }}: {{ data.label }}</h2>
+    {% else %}
+      <h2>{{ data.label }}: '{{ entity.label }}'</h2>
+    {% endif %}
+    <div class="ratings-section-wrapper">
+      <div class="ratings-section">
+        <h3 class="ratings-label">
+          {{ data.label ~ ' Review Volume'|t }}
+        </h3>
+        <div class="ratings-sub-label">
+          {{ 'Overall performance of Ratings & Reviews across total portfolio'|t }}
+        </div>
+        <div class="ratings-row">
+          <div class="ratings-column">
+            <div class="rating-metric-label">{{ 'Total reviews'|t }} </div>
+            <div class="rating-metric-value">{{ data.totalVotes }}</div>
+          </div>
+          <div class="ratings-column">
+            <div class="rating-metric-label">{{ 'Average rating'|t }}</div>
+            <div class="rating-metric-value">{{ data.average }}</div>
+          </div>
+          <div class="ratings-column">
+            <div class="rating-metric-label">{{ '% 4-star+ reviews'|t }}</div>
+            <div class="rating-metric-value">{{ data.fourStarVotesPercentage }} %</div>
+          </div>
+          <div class="ratings-column">
+            <div class="rating-metric-label">{{ '% Recommended'|t }}</div>
+            <div class="rating-metric-value">{{ data.recommendationsPercentage }} %</div>
+          </div>
+        </div>
+      </div>
+      <div class="ratings-section">
+        <h3 class="ratings-label">
+          {{ 'Coverage'|t }}
+        </h3>
+        <div class="ratings-sub-label">
+          {{ 'How many entities have published reviews'|t }}
+        </div>
+        <div class="ratings-row">
+          <div class="ratings-column">
+            <div class="rating-metric-label">{{ 'Total entities'|t }}</div>
+            <div class="rating-metric-value">{{ data.totalEntities }}</div>
+          </div>
+          <div class="ratings-column">
+            <div class="rating-metric-label">{{ 'With reviews'|t }}</div>
+            <div class="rating-metric-value">{{ data.entitiesWithReviewsPercentage }} % ({{ data.entitiesWithReviews }})</div>
+          </div>
+          <div class="ratings-column">
+            <div class="rating-metric-label">{{ 'Without reviews'|t }}</div>
+            <div class="rating-metric-value">{{ data.entitiesWithoutReviewsPercentage }} % ({{ data.entitiesWithoutReviews }})</div>
+          </div>
+        </div>
+      </div>
+      <div class="ratings-section">
+        <h3 class="ratings-label">
+          {{ 'Review Approval Status'|t }}
+        </h3>
+        <div class="ratings-sub-label">
+          {{ 'Status of reviews'|t }}
+        </div>
+        <div class="ratings-row">
+          <div class="ratings-column">
+            <div class="rating-metric-label"><a href="{{ path('comment.admin_approval') }}">{{ 'Reviews pending moderation'|t }}</a></div>
+            <div class="rating-metric-value">{{ data.unpublished }}</div>
+          </div>
+          <div class="ratings-column">
+            <div class="rating-metric-label"><a href="{{ path('comment.admin') }}">{{ 'Approved reviews'|t }}</a></div>
+            <div class="rating-metric-value">{{ data.published }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

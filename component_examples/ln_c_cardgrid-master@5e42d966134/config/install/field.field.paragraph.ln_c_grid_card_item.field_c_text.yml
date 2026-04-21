@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_c_text
+    - paragraphs.paragraphs_type.ln_c_grid_card_item
+  module:
+    - text
+id: paragraph.ln_c_grid_card_item.field_c_text
+field_name: field_c_text
+entity_type: paragraph
+bundle: ln_c_grid_card_item
+label: Body
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

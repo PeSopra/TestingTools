@@ -1,0 +1,286 @@
+langcode: en
+status: true
+config_replace: 'replace'
+dependencies:
+  config:
+    - comment.type.dsu_ratings_reviews_comment_type
+    - field.field.comment.dsu_ratings_reviews_comment_type.field_display_name
+    - field.field.comment.dsu_ratings_reviews_comment_type.field_dsu_comment
+    - field.field.comment.dsu_ratings_reviews_comment_type.field_dsu_images
+    - field.field.comment.dsu_ratings_reviews_comment_type.field_dsu_marketing_opt_in
+    - field.field.comment.dsu_ratings_reviews_comment_type.field_dsu_ratings
+    - field.field.comment.dsu_ratings_reviews_comment_type.field_dsu_recommend
+    - field.field.comment.dsu_ratings_reviews_comment_type.field_dsu_tos
+  module:
+    - ds
+    - dsu_ratings_reviews
+    - field_group
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes:
+          layout_class: {  }
+        wrappers:
+          ds_content: article
+        outer_wrapper: div
+        attributes: 'role|article,class|dsu-ratings-reviews-comment js-comment clearfix'
+        link_attribute: ''
+        link_custom: ''
+        label: ''
+    regions:
+      ds_content:
+        - group_comment_meta
+        - dsu_ratins_reviews_new_indicator_timestamp
+        - dsu_ratins_reviews_author
+        - group_card_body_head
+        - dsu_ratins_reviews_permalink
+        - comment_user
+        - group_card_wrapper
+        - flag_dsu_ratings_comment_useful
+        - group_card_body_center
+        - dsu_ratins_reviews_parent_data
+        - group_card_body_footer
+        - flag_dsu_ratings_comment_unuseful
+        - dsu_ratins_reviews_reply
+        - dsu_ratins_reviews_subject
+        - comment_post_date
+        - field_dsu_ratings
+        - field_dsu_comment
+        - field_dsu_images
+        - group_helpful
+        - links
+    fields:
+      dsu_ratins_reviews_permalink:
+        plugin_id: dsu_ratins_reviews_permalink
+        weight: 0
+        label: hidden
+        formatter: ds_post_date_comment_medium_date
+      dsu_ratins_reviews_author:
+        plugin_id: dsu_ratins_reviews_author
+        weight: 2
+        label: hidden
+        formatter: default
+      dsu_ratins_reviews_new_indicator_timestamp:
+        plugin_id: dsu_ratins_reviews_new_indicator_timestamp
+        weight: 2
+        label: hidden
+        formatter: default
+      dsu_ratins_reviews_parent_data:
+        plugin_id: dsu_ratins_reviews_parent_data
+        weight: 3
+        label: hidden
+        formatter: default
+      dsu_ratins_reviews_reply:
+        plugin_id: dsu_ratins_reviews_reply
+        weight: 4
+        label: hidden
+        formatter: default
+      dsu_ratins_reviews_subject:
+        plugin_id: dsu_ratins_reviews_subject
+        weight: 5
+        label: hidden
+        formatter: default
+        settings:
+          link: '1'
+          'link class': permalink
+          wrapper: h3
+          class: card-title
+      comment_user:
+        plugin_id: comment_user
+        weight: 1
+        label: hidden
+        formatter: default
+      comment_post_date:
+        plugin_id: comment_post_date
+        weight: 7
+        label: hidden
+        formatter: ds_post_date_comment_medium_date
+  field_group:
+    group_helpful:
+      children:
+        - flag_dsu_ratings_comment_useful
+        - flag_dsu_ratings_comment_unuseful
+      label: 'Helpful?'
+      parent_name: group_card_body_head
+      region: ds_content
+      weight: 11
+      format_type: html_element
+      format_settings:
+        classes: usefulness
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: true
+        label_element: div
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_comment_meta:
+      children:
+        - dsu_ratins_reviews_new_indicator_timestamp
+        - comment_user
+        - dsu_ratins_reviews_author
+        - dsu_ratins_reviews_parent_data
+      label: 'Comment meta'
+      parent_name: ''
+      region: ds_content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: 'comment__meta col-sm-3'
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_card_wrapper:
+      children:
+        - group_card_body_head
+        - group_card_body_center
+        - group_card_body_footer
+      label: 'Card Wrapper'
+      parent_name: ''
+      region: ds_content
+      weight: 1
+      format_type: html_element
+      format_settings:
+        classes: 'comment__content col-sm-9 card'
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_card_body_head:
+      children:
+        - dsu_ratins_reviews_subject
+        - comment_post_date
+        - field_dsu_ratings
+        - field_dsu_comment
+        - field_dsu_images
+        - group_helpful
+        - links
+      label: 'Card body head'
+      parent_name: group_card_wrapper
+      region: ds_content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: card-body
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_card_body_center:
+      children:
+        - dsu_ratins_reviews_permalink
+      label: 'Card body center'
+      parent_name: group_card_wrapper
+      region: ds_content
+      weight: 1
+      format_type: html_element
+      format_settings:
+        classes: card-body
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_card_body_footer:
+      children:
+        - dsu_ratins_reviews_reply
+      label: 'Card body footer'
+      parent_name: group_card_wrapper
+      region: ds_content
+      weight: 2
+      format_type: html_element
+      format_settings:
+        classes: card-body
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: comment.dsu_ratings_reviews_comment_type.default
+targetEntityType: comment
+bundle: dsu_ratings_reviews_comment_type
+mode: default
+content:
+  field_dsu_comment:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: ds_content
+  field_dsu_images:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    weight: 10
+    region: ds_content
+  field_dsu_ratings:
+    type: dsu_fivestar_stars
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: ds_content
+  flag_dsu_ratings_comment_unuseful:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: ds_content
+  flag_dsu_ratings_comment_useful:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: ds_content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 13
+    region: ds_content
+  reply:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: ds_content
+hidden:
+  field_dsu_marketing_opt_in: true
+  field_dsu_recommend: true
+  field_dsu_tos: true
+  langcode: true
+  search_api_excerpt: true
+  field_display_name: true

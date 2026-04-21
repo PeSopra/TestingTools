@@ -1,0 +1,159 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_c_subitems
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.accordion_item
+  module:
+    - entity_reference_revisions
+id: paragraph.accordion.field_c_subitems
+field_name: field_c_subitems
+entity_type: paragraph
+bundle: accordion
+label: 'Accordion item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      accordion_item: accordion_item
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: 63
+        enabled: false
+      accordion_item:
+        weight: 64
+        enabled: true
+      c_countdown:
+        weight: 65
+        enabled: false
+      c_document:
+        weight: 66
+        enabled: false
+      c_entitycycle:
+        weight: 67
+        enabled: false
+      c_externalvideo:
+        weight: 68
+        enabled: false
+      c_gallery:
+        weight: 69
+        enabled: false
+      c_gallery_item:
+        weight: 70
+        enabled: false
+      c_image:
+        weight: 71
+        enabled: false
+      c_link:
+        weight: 72
+        enabled: false
+      c_link_document_container:
+        weight: 73
+        enabled: false
+      c_map:
+        weight: 74
+        enabled: false
+      c_share_buttons:
+        weight: 75
+        enabled: false
+      c_shopify:
+        weight: 76
+        enabled: false
+      c_sideimagetext:
+        weight: 77
+        enabled: false
+      c_slide:
+        weight: 78
+        enabled: false
+      c_slider:
+        weight: 79
+        enabled: false
+      c_spacer:
+        weight: 82
+        enabled: false
+      c_tab_item:
+        weight: 84
+        enabled: false
+      c_tabbed_content:
+        weight: 83
+        enabled: false
+      c_teasercycle:
+        weight: 85
+        enabled: false
+      c_teasercycle_item:
+        weight: 86
+        enabled: false
+      c_text:
+        weight: 89
+        enabled: false
+      dsu_c_view:
+        weight: 90
+        enabled: false
+      dsu_tint:
+        weight: 92
+        enabled: false
+      forms:
+        weight: 93
+        enabled: false
+      image_hotspots_areas:
+        weight: 94
+        enabled: false
+      layout_25_25_50:
+        weight: 95
+        enabled: false
+      layout_25_50_25:
+        weight: 96
+        enabled: false
+      layout_25_75:
+        weight: 97
+        enabled: false
+      layout_33_66:
+        weight: 98
+        enabled: false
+      layout_50_25_25:
+        weight: 99
+        enabled: false
+      layout_66_33:
+        weight: 100
+        enabled: false
+      layout_75_25:
+        weight: 101
+        enabled: false
+      layout_columns_1:
+        weight: 102
+        enabled: false
+      layout_columns_2:
+        weight: 103
+        enabled: false
+      layout_columns_20:
+        weight: 104
+        enabled: false
+      layout_columns_3:
+        weight: 105
+        enabled: false
+      layout_columns_4:
+        weight: 106
+        enabled: false
+      ln_c_cardgrid:
+        weight: 109
+        enabled: false
+      ln_c_grid_card_item:
+        weight: 111
+        enabled: false
+      ln_c_power_reviews:
+        weight: 112
+        enabled: false
+      quiz:
+        weight: 115
+        enabled: false
+      quiz_question:
+        weight: 116
+        enabled: false
+field_type: entity_reference_revisions

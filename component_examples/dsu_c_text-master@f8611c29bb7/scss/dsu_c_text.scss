@@ -1,0 +1,105 @@
+.paragraph--type--c-text {
+  padding: 1rem;
+
+  @media only screen and (min-width: 768px) {
+    padding: 1.5rem;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    padding: 3rem;
+  }
+
+  &.horizontal_position_center {
+    text-align: center !important;
+  }
+
+  &.horizontal_position_right {
+    text-align: right !important;
+  }
+
+  &.vertical_top {
+    padding-bottom: 2rem;
+
+    @media only screen and (min-width: 768px) {
+      padding-bottom: 3rem;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      padding-bottom: 6rem;
+    }
+  }
+
+  &.vertical_bottom {
+    padding-top: 2rem;
+
+    @media only screen and (min-width: 768px) {
+      padding-top: 3rem;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      padding-top: 6rem;
+    }
+  }
+
+  --dsu_c_text-color: currentColor;
+  --dsu_c_text-color2: currentColor;
+  --dsu_c_text-background: transparent;
+  --dsu_c_text-btnColor: #FFFF;
+  --dsu_c_text-btnBackground: #333;
+
+  &.white-text {
+    --dsu_c_text-color: #FFF;
+    --dsu_c_text-color2: #FFF;
+    --dsu_c_text-background: #333;
+    --dsu_c_text-btnColor: #333;
+    --dsu_c_text-btnBackground: #FFFF;
+  }
+
+  &.dark-text {
+    --dsu_c_text-color: #777;
+    --dsu_c_text-color2: #333;
+    --dsu_c_text-background: #FFF;
+    --dsu_c_text-btnColor: #FFF;
+    --dsu_c_text-btnBackground: #333;
+  }
+
+  color: var(--dsu_c_text-color);
+  background-color: var(--dsu_c_text-background);
+
+  a {
+    color: var(--dsu_c_text-color2);
+
+    &:hover {
+      color: currentColor;
+    }
+  }
+
+  strong, .field--name-field-c-advanced-title, .field--name-field-c-advanced-subtitle {
+    color: var(--dsu_c_text-color2);
+  }
+
+  .field--name-field-c-link a {
+    display: inline-block;
+    padding: 0.7rem 1.625rem;
+    border-radius: 5px;
+    background: var(--dsu_c_text-btnBackground);
+    color: var(--dsu_c_text-btnColor);
+  }
+
+  .contextual-links a {
+    color: initial;
+  }
+
+  .field--name-field-c-advanced-title,
+  .field--name-field-c-advanced-subtitle {
+    margin-bottom: 10px;
+  }
+
+  .text-large-bold-underline {
+    margin: 0 0 8px;
+  }
+
+  .text-large-plain {
+    margin: 0 0 26px;
+  }
+}

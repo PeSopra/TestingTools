@@ -1,0 +1,83 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.c_text.field_c_advanced_subtitle
+    - field.field.paragraph.c_text.field_c_advanced_title
+    - field.field.paragraph.c_text.field_c_link
+    - field.field.paragraph.c_text.field_c_text
+    - paragraphs.paragraphs_type.c_text
+  module:
+    - dsu_c_core
+    - field_group
+    - link_attributes
+    - text
+third_party_settings:
+  field_group:
+    group_optional_fields:
+      children:
+        - field_c_advanced_title
+        - field_c_advanced_subtitle
+        - field_c_link
+      label: 'Optional fields'
+      region: content
+      parent_name: ''
+      weight: 3
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: false
+id: paragraph.c_text.default
+targetEntityType: paragraph
+bundle: c_text
+mode: default
+content:
+  field_c_advanced_subtitle:
+    type: string_html_tag_widget
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_c_advanced_title:
+    type: string_html_tag_widget
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_c_link:
+    type: link_attributes
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        target: true
+        id: false
+        name: false
+        rel: true
+        class: false
+        accesskey: false
+        aria-label: true
+        title: false
+    third_party_settings: {  }
+  field_c_text:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

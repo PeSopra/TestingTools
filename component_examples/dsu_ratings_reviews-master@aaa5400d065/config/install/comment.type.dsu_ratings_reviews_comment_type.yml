@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: dsu_ratings_reviews_comment_type
+label: 'DSU Ratings and Reviews Comment Type'
+target_entity_type_id: node
+description: ''

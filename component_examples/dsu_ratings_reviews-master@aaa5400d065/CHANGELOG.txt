@@ -1,0 +1,137 @@
+# Changelog
+
+## 4.3.0
+- Add compatibility with PHP 8.4
+- A11Y: Focus Visible Issue
+
+## 4.2.0
+- Review and adapt for Drupal 11.2
+- Refactor GA events
+
+## 4.1.0
+- Update drupal/xls_serialization dependency for a major release
+- Fix wrong pagination after commenting
+
+## 4.0.0
+- Prepare for Drupal 11
+- Clean and updated dependencies
+- Keep compatibility with latest flag version
+- Improve system prompt
+
+## 3.6.0
+- Add NesGen integration for automatic replies
+- Update lightnest/ln_m_core dependency for a major release
+- Update drupal/field_group dependency for a major release
+
+## 3.5.0
+- Review and adapt for drupal 10.3
+- Allow multiple responses from admins
+
+## 3.4.0
+- A11Y: Resolved all accessibility scan issues.
+
+## 3.3.0
+- Change field type category name by category ID for Drupal 10.2
+
+## 3.2.0
+- Add option to export dashboard in an excel file
+- Fix permalinks on reviews
+- Update lightnest/ln_m_core dependency
+
+## 3.1.0
+- Prepare module for Lightnest browser
+- Modify text files to follow the rules of markdown characters limit
+- Update inline_entity_form configs
+
+## 3.0.1
+- Fix fields as translatable by default for multilanguage sites.
+- Do not overwrite existing site configurations
+- Move recaptcha functionality to dsu_security
+
+## 3.0.0
+- Refactor module to not use the fivestar dependency and optimize the code
+- Prepare for Drupal 10
+- Clean and updated dependencies
+
+## 2.1.3
+- Move admin base path to module dsu_core
+- Fix administration mandatory field
+
+## 2.1.2
+- Fix datalayer use
+
+## 2.1.1
+- Apply changes for refactor ln_datalayer module
+- Fix configs and dependencies
+
+## 2.1.0
+- Update datalayer for GA4
+- Fix warning for PHP 8
+- Add optin for commercial
+
+## 2.0.9
+- Prepare for bootstrap 5.
+
+## 2.0.8
+- Ratings & Reviews view configuration changes.
+- To Incorporate these changes please follow below steps :
+    * Run “composer update”
+    * Drush cr and rebuild the cache
+    * Go to Admin -> config -> Development ->
+      Features Page (admin/config/development/features) and revert
+      `dsu_ratings_reviews` feature.
+    * Validate the changes on Ratings & Reviews comment section.
+    * If either subject or comment is present then review will get displayed
+      else if none of them is present then the review will be hidden.
+
+## 2.0.7
+- If either subject or comment is present then review will get displayed else
+  if none of them is present then the review will be hidden.
+- To fix username cache issue for anonymous users, go to
+  `admin/config/people/accounts/display/compact`Change `Name` field format to
+  `User name without cache`.
+- Removing datalayer event trigger on rating review form submit. Handling it
+  from ln_datalayer module.
+
+## 2.0.6
+- To remove anonymous user link from image, go to
+  `admin/config/people/accounts/display/compact` and change field format to
+  `Remove Anonymous Link from Image`. Also change `Name` field format to
+  `User name`.
+- To remove `not verified` from anonymous username, go to `Appearance` »
+  `theme Settings` » uncheck `User verification status in comments` under
+  `Page Element`.
+- Run feature import and check if site having any issue.
+- Run clear cache and check if site having any issue.
+- Bug fixes: fivestar rating selection issue fixes.
+
+## 2.0.5
+- Fixed defect Ratings & Reviews | Rating stars showing only one time.
+- Default rating is set to 5.
+- Fixed defect Ratings & Reviews | Only one display user name is showing on
+  comments.
+- Update option "Any" to All ratings in R&R filter.
+- Run feature import and check if site having any issue.
+- Run clear cache and check if site having any issue.
+- Bug fixes: fivestar rating selection issue fixes.
+
+## 2.0.4
+- Fix defect Ratings & Reviews | Rating stars can be changed by other people.
+- Run clear cache and check if site having any issue.
+
+## 2.0.3
+- Remove max_resolution, min_resolution, max_filesize key from field yml.
+- Run feature import and check if site having any issue.
+
+## 2.0.2
+- Added New Lightnest rating & Reviews module.
+- Follow proper readme files for configuration.
+- Run update.php once you get new ratings & reviews module.
+- Run clear cache and check if site having any issue.
+
+## 1.1.1
+
+- Removed version from info.yml.
+- Comment title is now shown by default.
+- Replies are now restricted to one per comment.
+- Additionally, a permission has been added to limit them to specific users.

@@ -1,0 +1,9 @@
+image_center:
+  title: 'Image center'
+  source: 'content/components/image_center.yml'
+image_left:
+  title: 'Image left'
+  source: 'content/components/image_left.yml'
+image_right:
+  title: 'Image right'
+  source: 'content/components/image_right.yml'

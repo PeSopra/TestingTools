@@ -1,0 +1,10 @@
+name: 'Lightnest Components: Teaser Cycle'
+description: 'Used to display images and/or a short text in a cycle gallery.'
+type: module
+core_version_requirement: ^10 || ^11
+dependencies:
+  - link_attributes:link_attributes
+  - options_table:options_table
+  - lightnest:dsu_c_core
+package: 'Lightnest Components'
+version: 2.0.0

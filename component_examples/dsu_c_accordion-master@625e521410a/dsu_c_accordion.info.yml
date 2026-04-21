@@ -1,0 +1,8 @@
+name: 'Lightnest Components: Accordion'
+description: 'The Accordion component can be used to add FAQs or Q&As to a section. Structure your content in expandable and collapsible strips.'
+type: module
+core_version_requirement: ^10 || ^11
+dependencies:
+  - lightnest:dsu_c_core
+version: 3.0.2
+package: 'Lightnest Components'

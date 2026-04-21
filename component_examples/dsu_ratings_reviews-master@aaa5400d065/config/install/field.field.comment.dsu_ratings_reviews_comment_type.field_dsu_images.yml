@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.dsu_ratings_reviews_comment_type
+    - field.storage.comment.field_dsu_images
+    - media.type.dsu_comment_image
+id: comment.dsu_ratings_reviews_comment_type.field_dsu_images
+field_name: field_dsu_images
+entity_type: comment
+bundle: dsu_ratings_reviews_comment_type
+label: Images
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      dsu_comment_image: dsu_comment_image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

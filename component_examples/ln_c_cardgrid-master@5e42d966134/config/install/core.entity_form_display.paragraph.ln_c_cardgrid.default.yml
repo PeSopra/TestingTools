@@ -1,0 +1,83 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ln_c_cardgrid.field_c_advanced_title
+    - field.field.paragraph.ln_c_cardgrid.field_c_cardgrid_view_mode
+    - field.field.paragraph.ln_c_cardgrid.field_c_subitems
+    - paragraphs.paragraphs_type.ln_c_cardgrid
+  module:
+    - dsu_c_core
+    - field_group
+    - paragraphs_ee
+    - paragraphs_features
+    - paragraphs_previewer
+third_party_settings:
+  field_group:
+    group_optional_fields:
+      children:
+        - field_c_advanced_title
+      label: 'Optional fields'
+      region: content
+      parent_name: ''
+      weight: 1
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: false
+id: paragraph.ln_c_cardgrid.default
+targetEntityType: paragraph
+bundle: ln_c_cardgrid
+mode: default
+content:
+  field_c_advanced_title:
+    type: string_html_tag_widget
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_c_cardgrid_view_mode:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_c_subitems:
+    type: paragraphs_previewer
+    weight: 2
+    region: content
+    settings:
+      title: Item
+      title_plural: Items
+      edit_mode: closed
+      closed_mode: preview
+      autocollapse: all
+      closed_mode_threshold: '0'
+      add_mode: modal
+      form_display_mode: default
+      default_paragraph_type: ln_c_grid_card_item
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: 0
+    third_party_settings:
+      paragraphs_features:
+        add_in_between: true
+        add_in_between_link_count: 3
+        delete_confirmation: false
+        split_text: false
+        show_drag_and_drop: true
+      paragraphs_ee:
+        paragraphs_ee:
+          dialog_off_canvas: false
+          dialog_style: tiles
+          easy_access_count: 0
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,65 @@
+# Changelog
+
+## 3.0.0
+- Prepare for Drupal 11
+- Clean and updated dependencies
+
+## 2.5.0
+- Adaptations to use media_library as default widget instead of entity_browser
+
+## 2.4.0
+-A11Y: Enabled aria-label attribute for links
+
+## 2.3.0
+- Prepare module for Lightnest browser
+- Modify text files to follow the rules of markdown characters limit
+- Update link_attributes dependency for a major release
+- Apply changes for refactor ln_sample_content module
+
+## 2.2.1
+- Fix fields as translatable by default for multilanguage sites.
+
+## 2.2.0
+- Prepare for Drupal 10
+- Clean and updated dependencies
+
+## 2.1.0
+- Refactor post_update for performance improvement
+
+## 2.0.1
+- Improvement css for better practices.
+
+## 2.0.0
+- Refactor image component.
+
+## 1.4.3
+- H's should be implemented inside the DIV instead of above.
+
+## 1.4.2
+
+- rel attribute added if target exist on anchor tag.
+- Bug fix : Made full button clickable.
+
+##Validation
+- Add the component on a page and validate.
+
+## 1.4.1
+
+- Bug fix : CTA buttons adds default inline CSS when NONE selected for color.
+
+
+##Validation
+- Add the component on a page and validate.
+
+## 1.3.4 for Drupal 9
+
+- Enable the field_group module if not enabled.
+- Go to '/admin/config/development/features/diff/dsu_c_image' and import the
+  diff.
+	- Update the widget of 'CTA Button URL' field from 'Link (with attributes)'
+	  to 'Link with target' on 'Manage form display'.
+- Uninstall the link_target module.
+
+
+##Validation
+- Add the component on a page and validate.

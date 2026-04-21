@@ -1,0 +1,228 @@
+<?php
+
+/**
+ * @file
+ * Contains dsu_ratings_reviews.module.
+ */
+
+use Drupal\comment\CommentInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\node\NodeInterface;
+use Drupal\views\Plugin\views\query\QueryPluginBase;
+use Drupal\views\ViewExecutable;
+use Drupal\dsu_ratings_reviews\DsuRatingsReviewsConstants;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Form\FormStateInterface;
+
+
+/**
+ * Implements hook_comment_links_alter().
+ */
+function dsu_ratings_reviews_comment_links_alter(array &$links, CommentInterface $entity, array &$context) {
+  if($entity->bundle() == DsuRatingsReviewsConstants::COMMENT_TYPE){
+    Drupal::service('ratings_reviews.display_adapter')->commentLinksAlter($links, $entity, $context);
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function dsu_ratings_reviews_form_comment_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if($form_id == 'comment_dsu_ratings_reviews_comment_type_form'){
+    Drupal::service('ratings_reviews.display_adapter')->formCommentFormAlter($form, $form_state, $form_id);
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter() for views_exposed_form.
+ */
+function dsu_ratings_reviews_form_views_exposed_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  /** @var ViewExecutable $view */
+  if($view = $form_state->get('view')){
+    if($view->id() == DsuRatingsReviewsConstants::RATINGS_REVIEWS_VIEW && $view->current_display == DsuRatingsReviewsConstants::RATINGS_REVIEWS_VIEW_FULL_DISPLAY){
+      Drupal::service('ratings_reviews.display_adapter')->commentsExposedFormAlter($form, $form_state, $form_id);
+    }
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function dsu_ratings_reviews_theme_suggestions_comment_alter(array &$suggestions, array $variables) {
+  // Suggestion by bundle.
+  $comment = $variables['elements']['#comment'];
+  $suggestions[] = 'comment__' . $comment->bundle();
+
+  // Different template for replies by bundle.
+  $parent_comment = $comment->get('pid')->getValue();
+  if (!empty($parent_comment[0]['target_id'])) {
+    $suggestions[] = 'comment__' . $comment->bundle() . '__reply';
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function dsu_ratings_reviews_theme_suggestions_field_alter(array &$suggestions, array $variables) {
+  $element = $variables['element'];
+  $is_comment = !empty($element['#field_type']) && $element['#field_type'] === 'comment';
+  $has_formatter = !empty($element['#formatter']) && $element['#formatter'] === 'dsu_ratings_reviews_comment_formatter';
+  if ($is_comment && $has_formatter && !empty($element[0]['#comment_type'])) {
+    $suggestions[] = 'field__comment__type__' . $element[0]['#comment_type'];
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function dsu_ratings_reviews_theme() {
+  $theme['flag__dsu_ratings_comment_useful'] = [
+    'template' => 'flag/flag--dsu-ratings-comment-useful',
+  ];
+  $theme['flag__dsu_ratings_comment_unuseful'] = [
+    'template' => 'flag/flag--dsu-ratings-comment-unuseful',
+  ];
+  $theme['field__comment__type__dsu_ratings_reviews_comment_type'] = [
+    'base hook' => 'field',
+    'template' => 'field/field--comment--type--dsu-ratings-reviews-comment-type',
+  ];
+  $theme['page_statistics'] = [
+    'template' => 'page-statistics',
+    'variables' => [
+      'data' => [],
+      'entity' => NULL,
+    ],
+  ];
+  $theme['dsu_fivestar_static'] = [
+    'preprocess functions' => ['preprocess_dsu_fivestar_static'],
+    'variables' => [
+      'rating' => NULL,
+      'stars' => 5,
+      'vote_type' => 'vote',
+    ]
+  ];
+
+  return $theme;
+}
+
+/**
+ * Implements hook_node_links_alter().
+ */
+function dsu_ratings_reviews_node_links_alter(array &$links, NodeInterface $entity, array &$context) {
+  Drupal::service('ratings_reviews.display_adapter')->nodeLinksAlter($links, $entity, $context);
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_insert().
+ */
+function dsu_ratings_reviews_comment_insert(EntityInterface $entity) {
+  if($entity->bundle() == DsuRatingsReviewsConstants::COMMENT_TYPE){
+    // Replies do not need moderation.
+    if (!$entity->isPublished() && empty($entity->getParentComment())) {
+      Drupal::service('ratings_reviews.mail_adapter')->commentInsertSendMail($entity);
+    }
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_insert().
+ *
+ * Un-flags/flags reverse flag for DSU comments.
+ */
+function dsu_ratings_reviews_flagging_insert(EntityInterface $entity) {
+  if(in_array($entity->bundle(),[DsuRatingsReviewsConstants::FLAG_ID_USEFUL, DsuRatingsReviewsConstants::FLAG_ID_UNUSEFUL])){
+    Drupal::service('ratings_reviews.flag_adapter')->flaggingEntityInsert($entity);
+  }
+}
+
+/**
+ * Implements hook_mail().
+ */
+function dsu_ratings_reviews_mail($key, &$message, $params) {
+  Drupal::service('ratings_reviews.mail_adapter')->sendMail($key, $message, $params);
+}
+
+/**
+ * Implements hook_entity_bundle_field_info_alter().
+ */
+function dsu_ratings_reviews_entity_bundle_field_info_alter(&$fields, EntityTypeInterface $entity_type, $bundle) {
+  if ($entity_type->id() === 'comment' && $bundle === DsuRatingsReviewsConstants::COMMENT_TYPE){
+    Drupal::service('ratings_reviews.display_adapter')->entityBundleFieldInfoAlter($fields, $entity_type, $bundle);
+  }
+}
+
+/**
+ * Implements hook_entity_form_display_alter().
+ *
+ * Modifies reply comments to use its own form mode.
+ */
+function dsu_ratings_reviews_entity_form_display_alter(&$form_display, $context) {
+  if ($context['entity_type'] == 'comment' && $context['bundle'] == DsuRatingsReviewsConstants::COMMENT_TYPE) {
+    Drupal::service('ratings_reviews.display_adapter')->entityFormDisplayAlter($form_display, $context);
+  }
+}
+
+/**
+ * Implements hook_views_query_alter().
+ *
+ * Hides unpublished comments when the user don't have permissions.
+ */
+function dsu_ratings_reviews_views_query_alter(ViewExecutable $view, QueryPluginBase $query) {
+  if ($view->id() === DsuRatingsReviewsConstants::RATINGS_REVIEWS_VIEW && $view->current_display === DsuRatingsReviewsConstants::RATINGS_REVIEWS_VIEW_FULL_DISPLAY){
+    Drupal::service('ratings_reviews.display_adapter')->viewsQueryAlter($view, $query);
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ *
+ * Alters comments so replies are always published by default.
+ * Also check ratings are always within values and/or 4-stars.
+ */
+function dsu_ratings_reviews_comment_presave(EntityInterface $entity) {
+  if ($entity->bundle() === DsuRatingsReviewsConstants::COMMENT_TYPE) {
+    Drupal::service('ratings_reviews.display_adapter')->entityPresave($entity);
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_view_alter().
+ */
+function dsu_ratings_reviews_comment_view_alter(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display) {
+  /** @var CommentInterface $entity */
+  if($entity->bundle() == 'dsu_ratings_reviews_comment_type'){
+    Drupal::service('ratings_reviews.display_adapter')->entityViewAlter($build, $entity, $display);
+  }
+}
+
+function preprocess_dsu_fivestar_static(&$variables) {
+  $rating = $variables['rating'];
+  $stars = $variables['stars'];
+  $variables['items'] = [];
+  if (empty($stars)) {
+    $stars = 5;
+  }
+  $variables['numeric_rating'] = $rating / (100 / $stars);
+  for ($n = 1; $n <= $stars; $n++) {
+    $star_value = ceil((100 / $stars) * $n);
+    $prev_star_value = ceil((100 / $stars) * ($n - 1));
+    $variables['items'][$n]['percent'] = 0;
+    $variables['items'][$n]['active'] = $rating >= $star_value;
+    if ($rating < $star_value && $rating > $prev_star_value) {
+      $percent = (($rating - $prev_star_value) / ($star_value - $prev_star_value)) * 100;
+      $variables['items'][$n]['percent'] = $percent;
+    }
+  }
+}
+
+/**
+ * Implements hook_ds_pre_render_alter().
+ */
+function dsu_ratings_reviews_ds_pre_render_alter(array &$layout_render_array, array $context, array &$vars) {
+  if($context['entity_type'] == 'comment' && $context['bundle'] == 'dsu_ratings_reviews_comment_type'){
+    /** @var CommentInterface $entity */
+    $entity = $context['entity'];
+    $vars['attributes']['id'] = "comment-{$entity->id()}";
+  }
+}

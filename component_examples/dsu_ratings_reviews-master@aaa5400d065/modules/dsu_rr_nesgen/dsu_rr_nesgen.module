@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Contains dsu_rr_nesgen.module.
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\dsu_ratings_reviews\DsuRatingsReviewsConstants;
+
+/**
+ * Implements hook_ENTITY_TYPE_insert().
+ */
+function dsu_rr_nesgen_comment_insert(EntityInterface $entity): void {
+  if ($entity->bundle() == DsuRatingsReviewsConstants::COMMENT_TYPE
+    && $entity->get('pid')->isEmpty()
+  ) {
+    \Drupal::service('dsu_rr_nesgen.utils')->analizeReview($entity);
+  }
+}

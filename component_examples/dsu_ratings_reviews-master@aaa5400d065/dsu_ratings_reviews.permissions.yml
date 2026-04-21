@@ -1,0 +1,24 @@
+reply rating comments:
+  title: 'Reply rating comments'
+
+access ratings reviews dashboard:
+  title: 'Access to Ratings and Reviews dashboard'
+
+access ratings reviews moderator settings:
+  title: 'Access to Ratings and Reviews moderator settings'
+
+flag dsu_ratings_comment_unuseful:
+  title: 'Flag DSU Ratings and Reviews Comment Unuseful'
+  provider: flag
+
+flag dsu_ratings_comment_useful:
+  title: 'Flag DSU Ratings and Reviews Comment Useful'
+  provider: flag
+
+unflag dsu_ratings_comment_unuseful:
+  title: 'Unflag dsu ratings comment unuseful'
+  provider: flag
+
+unflag dsu_ratings_comment_useful:
+  title: 'Unflag dsu ratings comment useful'
+  provider: flag

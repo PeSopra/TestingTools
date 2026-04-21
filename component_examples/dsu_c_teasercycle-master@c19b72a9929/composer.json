@@ -1,0 +1,22 @@
+{
+    "name": "lightnest/dsu_c_teasercycle",
+    "description": "Used to display images and/or a short text in a cycle gallery.",
+    "type": "drupal-module",
+    "authors": [
+        {
+            "name": "Nestle",
+            "homepage": "https://lightnest.nestle.com"
+        }
+    ],
+    "keywords": [
+        "Basic Content Components"
+    ],
+    "require": {
+        "drupal/link_attributes": "^2.0",
+        "drupal/options_table": "^2.1",
+        "lightnest/dsu_c_core": "^2.0"
+    },
+    "extra": {
+        "lightnest-browser": true
+    }
+}

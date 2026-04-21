@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_ee
+third_party_settings:
+  paragraphs_ee:
+    paragraphs_categories:
+      carousels_galleries: carousels_galleries
+id: c_teasercycle_item
+label: 'Content: Teaser Cycle Item'
+icon_uuid: null
+icon_default: null
+description: 'DO NOT SELECT. This is a child item of the Teaser Cycle component.'
+behavior_plugins: {  }

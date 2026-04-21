@@ -1,0 +1,7 @@
+dsu_rr_nesgen.settings_form:
+  path: '/admin/config/lightnest/dsu_ratings_reviews/nesgen'
+  defaults:
+    _form: '\Drupal\dsu_rr_nesgen\Form\SettingsForm'
+    _title: 'NesGen Settings'
+  requirements:
+    _permission: 'access ratings reviews moderator settings'

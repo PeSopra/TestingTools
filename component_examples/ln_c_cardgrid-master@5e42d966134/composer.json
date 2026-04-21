@@ -1,0 +1,21 @@
+{
+    "name": "lightnest/ln_c_cardgrid",
+    "description": "Provides a component to display a grid of cards with images and text.",
+    "type": "drupal-module",
+    "authors": [
+        {
+            "name": "Nestle",
+            "homepage": "https://lightnest.nestle.com"
+        }
+    ],
+    "keywords": [
+        "Content"
+    ],
+    "require": {
+        "drupal/link_attributes": "^2.0",
+        "lightnest/dsu_c_core": "^2.0"
+    },
+    "extra": {
+        "lightnest-browser": true
+    }
+}

@@ -1,0 +1,26 @@
+entity_type: paragraph
+values:
+  type: accordion
+  field_c_subitems:
+    entity_type: paragraph
+    values:
+      - type: accordion_item
+        field_c_title: 'Bar chicory blue mountain roast et caffeine?'
+        field_c_text:
+          - value: '<p>Bar chicory, blue mountain roast et caffeine chicory. That french press barista sweet café au lait, wings cream dripper wings variety. Aged, cinnamon, coffee foam aroma sugar in turkish.</p>'
+            format: rich_text
+      - type: accordion_item
+        field_c_title: 'Espresso mocha sugar est?'
+        field_c_text:
+          - value: '<p>Espresso mocha sugar est, medium mazagran strong carajillo filter. Cream bar spoon, café au lait filter doppio irish variety. Doppio beans black organic aromatic beans steamed est rich latte.</p>'
+            format: rich_text
+      - type: accordion_item
+        field_c_title: 'Cinnamon cappuccino cinnamon cup qui organic?'
+        field_c_text:
+          - value: '<p>Cinnamon cappuccino cinnamon cup qui organic that extra lungo organic spoon crema. Macchiato frappuccino pumpkin spice, aromatic to go single origin id café au lait cortado. Steamed black arabica beans crema beans acerbic sit decaffeinated mocha french press.</p>'
+            format: rich_text
+      - type: accordion_item
+        field_c_title: 'Mocha turkish cream arabica aftertaste?'
+        field_c_text:
+          - value: '<p>Mocha turkish cream arabica aftertaste brewed variety. Plunger pot, body, rich body con panna, saucer french press cultivar iced sweet caffeine. Chicory barista blue mountain saucer variety mazagran to go.</p>'
+            format: rich_text

@@ -1,0 +1,354 @@
+.paragraph--type--ln-c-cardgrid {
+  --color_light_card: #fff;
+  --color_dark_card: #333;
+}
+@media (min-width: 768px) {
+  .paragraph--type--ln-c-cardgrid .field--name-field-c-subitems {
+    display: flex;
+  }
+  .paragraph--type--ln-c-cardgrid .field--name-field-c-subitems > .field__item {
+    flex: 1;
+  }
+}
+.paragraph--type--ln-c-cardgrid .paragraph--type--ln-c-grid-card-item {
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .paragraph--type--ln-c-cardgrid.ln-layout-1-col .field--name-field-c-subitems {
+    flex-wrap: wrap;
+  }
+  .paragraph--type--ln-c-cardgrid.ln-layout-1-col .field--name-field-c-subitems > .field__item {
+    flex: 1 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+  .paragraph--type--ln-c-cardgrid.ln-layout-2-col .field--name-field-c-subitems {
+    flex-wrap: wrap;
+  }
+  .paragraph--type--ln-c-cardgrid.ln-layout-2-col .field--name-field-c-subitems > .field__item {
+    flex: 1 50%;
+    width: 50%;
+    max-width: 50%;
+  }
+  .paragraph--type--ln-c-cardgrid.ln-layout-3-col .field--name-field-c-subitems {
+    flex-wrap: wrap;
+  }
+  .paragraph--type--ln-c-cardgrid.ln-layout-3-col .field--name-field-c-subitems > .field__item {
+    flex: 1 33.333333%;
+    width: 33.333333%;
+    max-width: 33.333333%;
+  }
+  .paragraph--type--ln-c-cardgrid.ln-layout-4-col .field--name-field-c-subitems {
+    flex-wrap: wrap;
+  }
+  .paragraph--type--ln-c-cardgrid.ln-layout-4-col .field--name-field-c-subitems > .field__item {
+    flex: 1 25%;
+    width: 25%;
+    max-width: 25%;
+  }
+  .paragraph--type--ln-c-cardgrid.ln-layout-5-col .field--name-field-c-subitems {
+    flex-wrap: wrap;
+  }
+  .paragraph--type--ln-c-cardgrid.ln-layout-5-col .field--name-field-c-subitems > .field__item {
+    flex: 1 20%;
+    width: 20%;
+    max-width: 20%;
+  }
+}
+.paragraph--type--ln-c-cardgrid.viewmode--extended-card .field--name-field-c-subitems, .paragraph--type--ln-c-cardgrid.viewmode--extended-card-title-image .field--name-field-c-subitems, .paragraph--type--ln-c-cardgrid.viewmode--full-color-box .field--name-field-c-subitems {
+  margin: 0 -10px;
+}
+.paragraph--type--ln-c-cardgrid.viewmode--extended-card .field--name-field-c-subitems > .field__item, .paragraph--type--ln-c-cardgrid.viewmode--extended-card-title-image .field--name-field-c-subitems > .field__item, .paragraph--type--ln-c-cardgrid.viewmode--full-color-box .field--name-field-c-subitems > .field__item {
+  padding: 0 10px;
+}
+.paragraph--type--ln-c-cardgrid .paragraph--type--ln-c-grid-card-item .field--name-field-c-advanced-subtitle {
+  margin-top: 0.5rem;
+}
+.paragraph--type--ln-c-cardgrid .paragraph--type--ln-c-grid-card-item .field--name-field-c-text {
+  margin-top: 1.2rem;
+}
+.paragraph--type--ln-c-cardgrid .paragraph--type--ln-c-grid-card-item .text-container {
+  display: flex;
+  flex-direction: column;
+}
+.paragraph--type--ln-c-cardgrid:not(.viewmode--full-color-box) .field--name-field-c-image {
+  margin: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 70%;
+}
+.paragraph--type--ln-c-cardgrid:not(.viewmode--full-color-box) .field--name-field-c-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.paragraph--type--ln-c-cardgrid.viewmode--bottom-text-box .paragraph--type--ln-c-grid-card-item {
+  height: 100%;
+  background-color: var(--color_dark_card);
+}
+.paragraph--type--ln-c-cardgrid.viewmode--bottom-text-box .wrapper-text-section {
+  padding: 45px;
+  color: var(--color_light_card);
+}
+.paragraph--type--ln-c-cardgrid.viewmode--bottom-text-box.dark-text .paragraph--type--ln-c-grid-card-item, .paragraph--type--ln-c-cardgrid.viewmode--bottom-text-box.dark-text.paragraph--type--ln-c-grid-card-item, .paragraph--type--ln-c-cardgrid.viewmode--bottom-text-box.white-text .dark-text .paragraph--type--ln-c-grid-card-item, .paragraph--type--ln-c-cardgrid.viewmode--bottom-text-box.white-text .dark-text.paragraph--type--ln-c-grid-card-item,
+.paragraph--type--ln-c-cardgrid.viewmode--bottom-text-box .dark-text .paragraph--type--ln-c-grid-card-item,
+.paragraph--type--ln-c-cardgrid.viewmode--bottom-text-box .dark-text.paragraph--type--ln-c-grid-card-item {
+  background: var(--color_light_card);
+}
+.paragraph--type--ln-c-cardgrid.viewmode--bottom-text-box.dark-text .wrapper-text-section, .paragraph--type--ln-c-cardgrid.viewmode--bottom-text-box.white-text .dark-text .wrapper-text-section,
+.paragraph--type--ln-c-cardgrid.viewmode--bottom-text-box .dark-text .wrapper-text-section {
+  color: var(--color_dark_card);
+}
+.paragraph--type--ln-c-cardgrid.viewmode--bottom-text-box.white-text .paragraph--type--ln-c-grid-card-item, .paragraph--type--ln-c-cardgrid.viewmode--bottom-text-box.white-text.paragraph--type--ln-c-grid-card-item, .paragraph--type--ln-c-cardgrid.viewmode--bottom-text-box.dark-text .white-text .paragraph--type--ln-c-grid-card-item, .paragraph--type--ln-c-cardgrid.viewmode--bottom-text-box.dark-text .white-text.paragraph--type--ln-c-grid-card-item,
+.paragraph--type--ln-c-cardgrid.viewmode--bottom-text-box .white-text .paragraph--type--ln-c-grid-card-item,
+.paragraph--type--ln-c-cardgrid.viewmode--bottom-text-box .white-text.paragraph--type--ln-c-grid-card-item {
+  background: var(--color_dark_card);
+}
+.paragraph--type--ln-c-cardgrid.viewmode--bottom-text-box.white-text .wrapper-text-section, .paragraph--type--ln-c-cardgrid.viewmode--bottom-text-box.dark-text .white-text .wrapper-text-section,
+.paragraph--type--ln-c-cardgrid.viewmode--bottom-text-box .white-text .wrapper-text-section {
+  color: var(--color_light_card);
+}
+.paragraph--type--ln-c-cardgrid.viewmode--extended-card .wrapper-img-section .field--name-field-c-image, .paragraph--type--ln-c-cardgrid.viewmode--extended-card-title-image .wrapper-img-section .field--name-field-c-image {
+  border-radius: 5px;
+}
+.paragraph--type--ln-c-cardgrid.viewmode--extended-card .wrapper-text-section, .paragraph--type--ln-c-cardgrid.viewmode--extended-card-title-image .wrapper-text-section {
+  padding: 0 20px;
+}
+.paragraph--type--ln-c-cardgrid.viewmode--extended-card.dark-text .wrapper-text-section, .paragraph--type--ln-c-cardgrid.viewmode--extended-card.white-text .dark-text .wrapper-text-section,
+.paragraph--type--ln-c-cardgrid.viewmode--extended-card .dark-text .wrapper-text-section, .paragraph--type--ln-c-cardgrid.viewmode--extended-card-title-image.dark-text .wrapper-text-section, .paragraph--type--ln-c-cardgrid.viewmode--extended-card-title-image.white-text .dark-text .wrapper-text-section,
+.paragraph--type--ln-c-cardgrid.viewmode--extended-card-title-image .dark-text .wrapper-text-section {
+  color: var(--color_dark_card);
+}
+.paragraph--type--ln-c-cardgrid.viewmode--extended-card.white-text .wrapper-text-section, .paragraph--type--ln-c-cardgrid.viewmode--extended-card.dark-text .white-text .wrapper-text-section,
+.paragraph--type--ln-c-cardgrid.viewmode--extended-card .white-text .wrapper-text-section, .paragraph--type--ln-c-cardgrid.viewmode--extended-card-title-image.white-text .wrapper-text-section, .paragraph--type--ln-c-cardgrid.viewmode--extended-card-title-image.dark-text .white-text .wrapper-text-section,
+.paragraph--type--ln-c-cardgrid.viewmode--extended-card-title-image .white-text .wrapper-text-section {
+  color: var(--color_light_card);
+}
+.paragraph--type--ln-c-cardgrid.viewmode--extended-card .wrapper-text-section {
+  margin: 20px 0;
+  padding: 0 20px;
+  border-left: solid 1px;
+  border-color: var(--color_dark_card);
+}
+.paragraph--type--ln-c-cardgrid.viewmode--extended-card.dark-text .wrapper-text-section, .paragraph--type--ln-c-cardgrid.viewmode--extended-card.white-text .dark-text .wrapper-text-section,
+.paragraph--type--ln-c-cardgrid.viewmode--extended-card .dark-text .wrapper-text-section {
+  border-color: var(--color_dark_card);
+  color: var(--color_dark_card);
+}
+.paragraph--type--ln-c-cardgrid.viewmode--extended-card.white-text .wrapper-text-section, .paragraph--type--ln-c-cardgrid.viewmode--extended-card.dark-text .white-text .wrapper-text-section,
+.paragraph--type--ln-c-cardgrid.viewmode--extended-card .white-text .wrapper-text-section {
+  border-color: var(--color_light_card);
+  color: var(--color_light_card);
+}
+.paragraph--type--ln-c-cardgrid.viewmode--extended-card-title-image .wrapper-text-section {
+  position: relative;
+}
+.paragraph--type--ln-c-cardgrid.viewmode--extended-card-title-image .wrapper-text-section .text-container {
+  margin-top: -2.2rem;
+}
+.paragraph--type--ln-c-cardgrid.viewmode--extended-card-title-image .wrapper-text-section .field--name-field-c-advanced-title {
+  background: var(--color_dark_card);
+  color: var(--color_light_card);
+  border-radius: 5px;
+  padding: 20px 25px;
+}
+.paragraph--type--ln-c-cardgrid.viewmode--extended-card-title-image .wrapper-text-section .field--name-field-c-advanced-title + .field {
+  margin-top: 2rem;
+}
+.paragraph--type--ln-c-cardgrid.viewmode--extended-card-title-image.dark-text .wrapper-text-section .field--name-field-c-advanced-title, .paragraph--type--ln-c-cardgrid.viewmode--extended-card-title-image.white-text .dark-text .wrapper-text-section .field--name-field-c-advanced-title,
+.paragraph--type--ln-c-cardgrid.viewmode--extended-card-title-image .dark-text .wrapper-text-section .field--name-field-c-advanced-title {
+  background: var(--color_dark_card);
+  color: var(--color_light_card);
+}
+.paragraph--type--ln-c-cardgrid.viewmode--extended-card-title-image.white-text .wrapper-text-section .field--name-field-c-advanced-title, .paragraph--type--ln-c-cardgrid.viewmode--extended-card-title-image.dark-text .white-text .wrapper-text-section .field--name-field-c-advanced-title,
+.paragraph--type--ln-c-cardgrid.viewmode--extended-card-title-image .white-text .wrapper-text-section .field--name-field-c-advanced-title {
+  background: var(--color_light_card);
+  color: var(--color_dark_card);
+}
+.paragraph--type--ln-c-cardgrid.viewmode--full-color-box .paragraph--type--ln-c-grid-card-item {
+  background: var(--color_dark_card);
+  color: var(--color_light_card);
+  text-align: center;
+  border-radius: 5px;
+  padding: 40px 20px 30px;
+}
+.paragraph--type--ln-c-cardgrid.viewmode--full-color-box .wrapper-img-section {
+  width: 50%;
+  margin: 0 auto;
+}
+.paragraph--type--ln-c-cardgrid.viewmode--full-color-box .wrapper-img-section img {
+  max-width: 100%;
+  height: auto;
+}
+.paragraph--type--ln-c-cardgrid.viewmode--full-color-box.dark-text .paragraph--type--ln-c-grid-card-item, .paragraph--type--ln-c-cardgrid.viewmode--full-color-box.dark-text.paragraph--type--ln-c-grid-card-item, .paragraph--type--ln-c-cardgrid.viewmode--full-color-box.white-text .dark-text .paragraph--type--ln-c-grid-card-item, .paragraph--type--ln-c-cardgrid.viewmode--full-color-box.white-text .dark-text.paragraph--type--ln-c-grid-card-item,
+.paragraph--type--ln-c-cardgrid.viewmode--full-color-box .dark-text .paragraph--type--ln-c-grid-card-item,
+.paragraph--type--ln-c-cardgrid.viewmode--full-color-box .dark-text.paragraph--type--ln-c-grid-card-item {
+  background: var(--color_light_card);
+  color: var(--color_dark_card);
+}
+.paragraph--type--ln-c-cardgrid.viewmode--full-color-box.white-text .paragraph--type--ln-c-grid-card-item, .paragraph--type--ln-c-cardgrid.viewmode--full-color-box.white-text.paragraph--type--ln-c-grid-card-item, .paragraph--type--ln-c-cardgrid.viewmode--full-color-box.dark-text .white-text .paragraph--type--ln-c-grid-card-item, .paragraph--type--ln-c-cardgrid.viewmode--full-color-box.dark-text .white-text.paragraph--type--ln-c-grid-card-item,
+.paragraph--type--ln-c-cardgrid.viewmode--full-color-box .white-text .paragraph--type--ln-c-grid-card-item,
+.paragraph--type--ln-c-cardgrid.viewmode--full-color-box .white-text.paragraph--type--ln-c-grid-card-item {
+  background: var(--color_dark_card);
+  color: var(--color_light_card);
+}
+.paragraph--type--ln-c-cardgrid.viewmode--hover-card-box .paragraph--type--ln-c-grid-card-item, .paragraph--type--ln-c-cardgrid.viewmode--hover-card-box-profile .paragraph--type--ln-c-grid-card-item {
+  position: relative;
+}
+.paragraph--type--ln-c-cardgrid.viewmode--hover-card-box .paragraph--type--ln-c-grid-card-item:not(:hover):not(:focus) .wrapper-text-section, .paragraph--type--ln-c-cardgrid.viewmode--hover-card-box-profile .paragraph--type--ln-c-grid-card-item:not(:hover):not(:focus) .wrapper-text-section {
+  position: absolute;
+}
+.paragraph--type--ln-c-cardgrid.viewmode--hover-card-box .paragraph--type--ln-c-grid-card-item:not(:hover):not(:focus) .wrapper-text-section .field--name-field-c-text,
+.paragraph--type--ln-c-cardgrid.viewmode--hover-card-box .paragraph--type--ln-c-grid-card-item:not(:hover):not(:focus) .wrapper-text-section .field--name-field-c-link, .paragraph--type--ln-c-cardgrid.viewmode--hover-card-box-profile .paragraph--type--ln-c-grid-card-item:not(:hover):not(:focus) .wrapper-text-section .field--name-field-c-text,
+.paragraph--type--ln-c-cardgrid.viewmode--hover-card-box-profile .paragraph--type--ln-c-grid-card-item:not(:hover):not(:focus) .wrapper-text-section .field--name-field-c-link {
+  display: none;
+}
+.paragraph--type--ln-c-cardgrid.viewmode--hover-card-box .paragraph--type--ln-c-grid-card-item:hover .wrapper-text-section, .paragraph--type--ln-c-cardgrid.viewmode--hover-card-box .paragraph--type--ln-c-grid-card-item:focus .wrapper-text-section, .paragraph--type--ln-c-cardgrid.viewmode--hover-card-box-profile .paragraph--type--ln-c-grid-card-item:hover .wrapper-text-section, .paragraph--type--ln-c-cardgrid.viewmode--hover-card-box-profile .paragraph--type--ln-c-grid-card-item:focus .wrapper-text-section {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 65px;
+}
+.paragraph--type--ln-c-cardgrid.viewmode--hover-card-box .paragraph--type--ln-c-grid-card-item:hover .wrapper-text-section .text-container, .paragraph--type--ln-c-cardgrid.viewmode--hover-card-box .paragraph--type--ln-c-grid-card-item:focus .wrapper-text-section .text-container, .paragraph--type--ln-c-cardgrid.viewmode--hover-card-box-profile .paragraph--type--ln-c-grid-card-item:hover .wrapper-text-section .text-container, .paragraph--type--ln-c-cardgrid.viewmode--hover-card-box-profile .paragraph--type--ln-c-grid-card-item:focus .wrapper-text-section .text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.paragraph--type--ln-c-cardgrid.viewmode--hover-card-box .paragraph--type--ln-c-grid-card-item:hover .wrapper-text-section .field--name-field-c-advanced-title,
+.paragraph--type--ln-c-cardgrid.viewmode--hover-card-box .paragraph--type--ln-c-grid-card-item:hover .wrapper-text-section .field--name-field-c-advanced-subtitle, .paragraph--type--ln-c-cardgrid.viewmode--hover-card-box .paragraph--type--ln-c-grid-card-item:focus .wrapper-text-section .field--name-field-c-advanced-title,
+.paragraph--type--ln-c-cardgrid.viewmode--hover-card-box .paragraph--type--ln-c-grid-card-item:focus .wrapper-text-section .field--name-field-c-advanced-subtitle, .paragraph--type--ln-c-cardgrid.viewmode--hover-card-box-profile .paragraph--type--ln-c-grid-card-item:hover .wrapper-text-section .field--name-field-c-advanced-title,
+.paragraph--type--ln-c-cardgrid.viewmode--hover-card-box-profile .paragraph--type--ln-c-grid-card-item:hover .wrapper-text-section .field--name-field-c-advanced-subtitle, .paragraph--type--ln-c-cardgrid.viewmode--hover-card-box-profile .paragraph--type--ln-c-grid-card-item:focus .wrapper-text-section .field--name-field-c-advanced-title,
+.paragraph--type--ln-c-cardgrid.viewmode--hover-card-box-profile .paragraph--type--ln-c-grid-card-item:focus .wrapper-text-section .field--name-field-c-advanced-subtitle {
+  display: none;
+}
+.paragraph--type--ln-c-cardgrid.viewmode--hover-card-box .wrapper-text-section, .paragraph--type--ln-c-cardgrid.viewmode--hover-card-box-profile .wrapper-text-section {
+  background: var(--color_dark_card);
+  color: var(--color_light_card);
+}
+.paragraph--type--ln-c-cardgrid.viewmode--hover-card-box.dark-text .wrapper-text-section, .paragraph--type--ln-c-cardgrid.viewmode--hover-card-box.white-text .dark-text .wrapper-text-section,
+.paragraph--type--ln-c-cardgrid.viewmode--hover-card-box .dark-text .wrapper-text-section, .paragraph--type--ln-c-cardgrid.viewmode--hover-card-box-profile.dark-text .wrapper-text-section, .paragraph--type--ln-c-cardgrid.viewmode--hover-card-box-profile.white-text .dark-text .wrapper-text-section,
+.paragraph--type--ln-c-cardgrid.viewmode--hover-card-box-profile .dark-text .wrapper-text-section {
+  background: var(--color_light_card);
+  color: var(--color_dark_card);
+}
+.paragraph--type--ln-c-cardgrid.viewmode--hover-card-box.white-text .wrapper-text-section, .paragraph--type--ln-c-cardgrid.viewmode--hover-card-box.dark-text .white-text .wrapper-text-section,
+.paragraph--type--ln-c-cardgrid.viewmode--hover-card-box .white-text .wrapper-text-section, .paragraph--type--ln-c-cardgrid.viewmode--hover-card-box-profile.white-text .wrapper-text-section, .paragraph--type--ln-c-cardgrid.viewmode--hover-card-box-profile.dark-text .white-text .wrapper-text-section,
+.paragraph--type--ln-c-cardgrid.viewmode--hover-card-box-profile .white-text .wrapper-text-section {
+  background: var(--color_dark_card);
+  color: var(--color_light_card);
+}
+.paragraph--type--ln-c-cardgrid.viewmode--hover-card-box .paragraph--type--ln-c-grid-card-item {
+  position: relative;
+}
+.paragraph--type--ln-c-cardgrid.viewmode--hover-card-box .paragraph--type--ln-c-grid-card-item:not(:hover):not(:focus) .wrapper-text-section {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 30px;
+}
+.paragraph--type--ln-c-cardgrid.viewmode--hover-card-box-profile .paragraph--type--ln-c-grid-card-item {
+  position: relative;
+}
+.paragraph--type--ln-c-cardgrid.viewmode--hover-card-box-profile .paragraph--type--ln-c-grid-card-item:not(:hover):not(:focus) .wrapper-text-section {
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 75%;
+  border-radius: 5px;
+  padding: 20px 25px;
+  text-align: center;
+}
+.paragraph--type--ln-c-cardgrid.viewmode--rollover-card .paragraph--type--ln-c-grid-card-item {
+  position: relative;
+}
+.paragraph--type--ln-c-cardgrid.viewmode--rollover-card .paragraph--type--ln-c-grid-card-item:not(:hover, :focus-within) .field--name-field-c-text,
+.paragraph--type--ln-c-cardgrid.viewmode--rollover-card .paragraph--type--ln-c-grid-card-item:not(:hover, :focus-within) .field--name-field-c-link {
+  display: none;
+}
+.paragraph--type--ln-c-cardgrid.viewmode--rollover-card .wrapper-text-section {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 30px;
+  background: var(--color_dark_card);
+  color: var(--color_light_card);
+}
+.paragraph--type--ln-c-cardgrid.viewmode--rollover-card.dark-text .wrapper-text-section, .paragraph--type--ln-c-cardgrid.viewmode--rollover-card.white-text .dark-text .wrapper-text-section,
+.paragraph--type--ln-c-cardgrid.viewmode--rollover-card .dark-text .wrapper-text-section {
+  background: var(--color_light_card);
+  color: var(--color_dark_card);
+}
+.paragraph--type--ln-c-cardgrid.viewmode--rollover-card.white-text .wrapper-text-section, .paragraph--type--ln-c-cardgrid.viewmode--rollover-card.dark-text .white-text .wrapper-text-section,
+.paragraph--type--ln-c-cardgrid.viewmode--rollover-card .white-text .wrapper-text-section {
+  background: var(--color_dark_card);
+  color: var(--color_light_card);
+}
+
+/* --- POSITION --- */
+.paragraph--type--ln-c-cardgrid {
+  /* general horizontal position */
+}
+.paragraph--type--ln-c-cardgrid.horizontal_position_left .text-container,
+.paragraph--type--ln-c-cardgrid .paragraph--type--ln-c-grid-card-item.horizontal_position_left .text-container {
+  align-items: flex-start;
+  text-align: left;
+}
+.paragraph--type--ln-c-cardgrid.horizontal_position_center .text-container,
+.paragraph--type--ln-c-cardgrid .paragraph--type--ln-c-grid-card-item.horizontal_position_center .text-container {
+  align-items: center !important;
+  text-align: center !important;
+}
+.paragraph--type--ln-c-cardgrid.horizontal_position_right .text-container,
+.paragraph--type--ln-c-cardgrid .paragraph--type--ln-c-grid-card-item.horizontal_position_right .text-container {
+  align-items: flex-end !important;
+  text-align: right !important;
+}
+.paragraph--type--ln-c-cardgrid {
+  /* vertical position */
+}
+.paragraph--type--ln-c-cardgrid.vertical_top .text-container,
+.paragraph--type--ln-c-cardgrid .paragraph--type--ln-c-grid-card-item.vertical_top .text-container {
+  justify-content: flex-start !important;
+}
+.paragraph--type--ln-c-cardgrid.vertical_middle .text-container,
+.paragraph--type--ln-c-cardgrid .paragraph--type--ln-c-grid-card-item.vertical_middle .text-container {
+  justify-content: center !important;
+}
+.paragraph--type--ln-c-cardgrid.vertical_bottom .text-container,
+.paragraph--type--ln-c-cardgrid .paragraph--type--ln-c-grid-card-item.vertical_bottom .text-container {
+  justify-content: flex-end !important;
+}
+.paragraph--type--ln-c-cardgrid {
+  /* specific elements position */
+}
+.paragraph--type--ln-c-cardgrid.viewmode--extended-card.horizontal_position_left .wrapper-text-section, .paragraph--type--ln-c-cardgrid.viewmode--extended-card .paragraph--type--ln-c-grid-card-item.horizontal_position_left .wrapper-text-section, .paragraph--type--ln-c-cardgrid.viewmode--extended-card-title-image.horizontal_position_left .wrapper-text-section, .paragraph--type--ln-c-cardgrid.viewmode--extended-card-title-image .paragraph--type--ln-c-grid-card-item.horizontal_position_left .wrapper-text-section {
+  border-left: solid 1px !important;
+}
+.paragraph--type--ln-c-cardgrid.viewmode--extended-card.horizontal_position_center .wrapper-text-section, .paragraph--type--ln-c-cardgrid.viewmode--extended-card .paragraph--type--ln-c-grid-card-item.horizontal_position_center .wrapper-text-section, .paragraph--type--ln-c-cardgrid.viewmode--extended-card-title-image.horizontal_position_center .wrapper-text-section, .paragraph--type--ln-c-cardgrid.viewmode--extended-card-title-image .paragraph--type--ln-c-grid-card-item.horizontal_position_center .wrapper-text-section {
+  border: none !important;
+}
+.paragraph--type--ln-c-cardgrid.viewmode--extended-card.horizontal_position_right .wrapper-text-section, .paragraph--type--ln-c-cardgrid.viewmode--extended-card .paragraph--type--ln-c-grid-card-item.horizontal_position_right .wrapper-text-section, .paragraph--type--ln-c-cardgrid.viewmode--extended-card-title-image.horizontal_position_right .wrapper-text-section, .paragraph--type--ln-c-cardgrid.viewmode--extended-card-title-image .paragraph--type--ln-c-grid-card-item.horizontal_position_right .wrapper-text-section {
+  border-left: none !important;
+  border-right: solid 1px !important;
+}
+.paragraph--type--ln-c-cardgrid.viewmode--extended-card-title-image.horizontal_position_left .wrapper-text-section .field--name-field-c-advanced-title, .paragraph--type--ln-c-cardgrid.viewmode--extended-card-title-image .paragraph--type--ln-c-grid-card-item.horizontal_position_left .wrapper-text-section .field--name-field-c-advanced-title {
+  left: 20px !important;
+}
+.paragraph--type--ln-c-cardgrid.viewmode--extended-card-title-image.horizontal_position_center .wrapper-text-section .field--name-field-c-advanced-title, .paragraph--type--ln-c-cardgrid.viewmode--extended-card-title-image .paragraph--type--ln-c-grid-card-item.horizontal_position_center .wrapper-text-section .field--name-field-c-advanced-title {
+  left: 50% !important;
+  right: inherit !important;
+  transform: translateX(-50%);
+}
+.paragraph--type--ln-c-cardgrid.viewmode--extended-card-title-image.horizontal_position_right .wrapper-text-section .field--name-field-c-advanced-title, .paragraph--type--ln-c-cardgrid.viewmode--extended-card-title-image .paragraph--type--ln-c-grid-card-item.horizontal_position_right .wrapper-text-section .field--name-field-c-advanced-title {
+  left: inherit !important;
+  right: 20px !important;
+}

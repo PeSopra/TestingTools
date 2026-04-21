@@ -1,0 +1,21 @@
+{
+    "name": "lightnest/dsu_c_image",
+    "description": "The image component allows an editor to add an image section with text and a CTA button.",
+    "type": "drupal-module",
+    "authors": [
+        {
+            "name": "Nestle",
+            "homepage": "https://lightnest.nestle.com"
+        }
+    ],
+    "keywords": [
+        "Basic Content Components"
+    ],
+    "require": {
+        "drupal/link_attributes": "^2.0",
+        "lightnest/dsu_c_core": "^2.0"
+    },
+    "extra": {
+        "lightnest-browser": true
+    }
+}

@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Contains dsu_c_image.module.
+ */
+
+/**
+ * Implements hook_preprocess_HOOK() for paragraph.html.twig.
+ */
+function dsu_c_image_preprocess_paragraph__c_image(&$variables) {
+  // Load the css file when the rendered element is a Image Paragraph.
+  $variables['#attached']['library'][] = 'dsu_c_image/general';
+}
+
+/**
+ * Implements hook_theme.
+ */
+function dsu_c_image_theme($existing, $type, $theme, $path) {
+  return [
+    'paragraph__c_image' => [
+      'template' => 'paragraph--c-image',
+      'base hook' => 'paragraphs',
+    ],
+  ];
+}

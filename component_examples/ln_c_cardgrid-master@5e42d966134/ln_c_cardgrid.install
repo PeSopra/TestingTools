@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the ln_c_cardgrid module.
+ */
+
+/**
+ * Implements hook_update_last_removed().
+ */
+function ln_c_cardgrid_update_last_removed(): int {
+  return 9101;
+}
+
+/**
+ * Refactor ln_c_cardgrid module
+ */
+function ln_c_cardgrid_update_10201() {
+  \Drupal::service('dsu_core.config_replace')->rewriteModuleConfig('ln_c_cardgrid');
+}
+
+function ln_c_cardgrid_update_dependencies() {
+  $dependencies['ln_c_cardgrid'][9101] = [
+    'dsu_c_core' => 9101,
+  ];
+  return $dependencies;
+}

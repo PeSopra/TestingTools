@@ -1,0 +1,30 @@
+langcode: en
+status: true
+config_replace: 'replace'
+dependencies:
+  config:
+    - comment.type.dsu_ratings_reviews_comment_type
+    - field.storage.comment.field_dsu_ratings
+id: comment.dsu_ratings_reviews_comment_type.field_dsu_ratings
+field_name: field_dsu_ratings
+entity_type: comment
+bundle: dsu_ratings_reviews_comment_type
+label: Ratings
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    rating: 100
+    target: null
+default_value_callback: ''
+settings:
+  stars: 5
+  allow_clear: false
+  allow_revote: true
+  allow_ownvote: true
+  rated_while: editing
+  enable_voting_target: false
+  target_bridge_field: ''
+  target_fivestar_field: ''
+field_type: dsu_fivestar

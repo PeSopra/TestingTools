@@ -1,0 +1,81 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_c_teasercycle_item
+    - paragraphs.paragraphs_type.c_teasercycle
+    - paragraphs.paragraphs_type.c_teasercycle_item
+  module:
+    - entity_reference_revisions
+id: paragraph.c_teasercycle.field_c_teasercycle_item
+field_name: field_c_teasercycle_item
+entity_type: paragraph
+bundle: c_teasercycle
+label: 'Cycle Item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      c_teasercycle_item: c_teasercycle_item
+    target_bundles_drag_drop:
+      c_teasercycle:
+        weight: 19
+        enabled: false
+      c_countdown:
+        weight: 20
+        enabled: false
+      c_document_item:
+        weight: 21
+        enabled: false
+      c_documents:
+        weight: 22
+        enabled: false
+      c_externalvideo:
+        weight: 23
+        enabled: false
+      c_linklist:
+        weight: 24
+        enabled: false
+      c_share_buttons:
+        weight: 25
+        enabled: false
+      c_slide:
+        weight: 26
+        enabled: false
+      c_slider:
+        weight: 27
+        enabled: false
+      c_teasercycle_item:
+        enabled: true
+        weight: 28
+      c_text:
+        weight: 29
+        enabled: false
+      dsu_faq:
+        weight: 30
+        enabled: false
+      dsu_skype_links:
+        weight: 31
+        enabled: false
+      dsu_supported_links:
+        weight: 32
+        enabled: false
+      layout_columns_1:
+        weight: 33
+        enabled: false
+      layout_columns_2:
+        weight: 34
+        enabled: false
+      layout_columns_3:
+        weight: 35
+        enabled: false
+      layout_columns_4:
+        weight: 36
+        enabled: false
+field_type: entity_reference_revisions

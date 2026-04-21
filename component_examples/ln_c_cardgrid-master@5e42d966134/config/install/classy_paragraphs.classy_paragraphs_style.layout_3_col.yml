@@ -1,0 +1,6 @@
+langcode: en
+status: true
+dependencies: {  }
+id: layout_3_col
+label: '3 columns'
+classes: ln-layout-3-col

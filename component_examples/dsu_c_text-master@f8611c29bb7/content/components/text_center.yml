@@ -1,0 +1,20 @@
+entity_type: paragraph
+values:
+  type: c_text
+  field_c_advanced_title:
+    - value: 'Cortado organic sit filter'
+      html_tag: h1
+  field_c_advanced_subtitle:
+    - value: 'Affogato dark extra americano instant cultivar shop latte crema sugar turkish'
+      html_tag: h2
+  field_c_text:
+    - value: '<p>Spoon sit whipped aged pumpkin spice foam id cinnamon et whipped macchiato. Medium cup body half and half seasonal cream coffee sweet. Mazagran french press, sweet viennese plunger pot arabica beans whipped. Sugar id, medium, dark robust to go espresso café au lait.<br>Est, et brewed, saucer fair trade a robusta whipped plunger pot. So to go galão dark coffee strong white spoon medium. Id qui crema galão in, strong cultivar in single origin rich. Saucer caramelization steamed sit steamed, as lungo redeye cultivar breve chicory lungo.<br>Cortado organic sit filter, cup organic irish at eu mazagran dark carajillo. Affogato dark extra americano instant cultivar shop latte crema sugar turkish. Organic, sweet percolator id cinnamon et crema organic siphon. Et coffee cup, extra et robusta aged doppio decaffeinated robusta.</p>'
+      format: rich_text
+  field_c_link:
+    - uri: https://www.nestle.com
+      title: 'Button Text'
+      options:
+        attributes:
+          target: _blank
+  classy:
+    - target_id: dsu_text_position_middle_center

@@ -1,0 +1,20 @@
+{
+    "name": "lightnest/dsu_c_accordion",
+    "description": "The Accordion component can be used to add FAQs or Q&As to a section. Structure your content in expandable and collapsible strips.",
+    "type": "drupal-module",
+    "authors": [
+        {
+          "name": "Nestle",
+          "homepage": "https://lightnest.nestle.com"
+        }
+    ],
+    "keywords": [
+        "Content"
+    ],
+    "require": {
+        "lightnest/dsu_c_core": "^2.0"
+    },
+    "extra": {
+        "lightnest-browser": true
+    }
+}

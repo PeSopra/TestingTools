@@ -1,0 +1,8 @@
+name: 'NesGen - R&R Integration'
+type: module
+description: 'NesGen - R&R Integration for automatic replies.'
+core_version_requirement: ^10 || ^11
+package: 'Lightnest'
+dependencies:
+  - lightnest:dsu_ratings_reviews
+  - lightnest:ln_nesgen

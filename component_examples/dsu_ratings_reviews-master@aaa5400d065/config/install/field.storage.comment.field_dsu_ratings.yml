@@ -1,0 +1,19 @@
+langcode: en
+status: true
+config_replace: 'replace'
+dependencies:
+  module:
+    - comment
+id: comment.field_dsu_ratings
+field_name: field_dsu_ratings
+entity_type: comment
+type: dsu_fivestar
+settings:
+  vote_type: vote
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

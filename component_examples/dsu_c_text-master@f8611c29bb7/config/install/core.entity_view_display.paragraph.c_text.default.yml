@@ -1,0 +1,55 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.c_text.field_c_advanced_subtitle
+    - field.field.paragraph.c_text.field_c_advanced_title
+    - field.field.paragraph.c_text.field_c_link
+    - field.field.paragraph.c_text.field_c_text
+    - paragraphs.paragraphs_type.c_text
+  module:
+    - dsu_c_core
+    - link
+    - text
+id: paragraph.c_text.default
+targetEntityType: paragraph
+bundle: c_text
+mode: default
+content:
+  field_c_advanced_subtitle:
+    type: string_html_tag_formatter
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_c_advanced_title:
+    type: string_html_tag_formatter
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_c_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_c_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  search_api_excerpt: true
